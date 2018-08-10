@@ -40,7 +40,7 @@ class Deck(object):
     def display(self):
         print '--- {} ---'.format(self.name)
         for index,card in enumerate(self.cards):
-            print '{} : {}'.format(index+1,card.title)
+            print '{} : {}'.format(index+1,card.name)
 
 
 
