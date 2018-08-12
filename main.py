@@ -12,3 +12,10 @@ my_deck.load_card('Bash',1)
 my_deck.display()
 
 database.display()
+
+card = database.request('Strike')
+card.view()
+
+card = database.request('Bash')
+card.view()
+
