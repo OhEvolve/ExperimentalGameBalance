@@ -13,9 +13,16 @@ my_deck.display()
 
 database.display()
 
-card = database.request('Strike')
-card.view()
-
+'''
 card = database.request('Bash')
 card.view()
+'''
+
+for card in database._database.values():
+    card.view()
+
+
+
+
+
 
