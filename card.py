@@ -6,6 +6,8 @@ import copy
 
 # nonstandard libraries
 import matplotlib
+matplotlib.use('ps')
+
 import matplotlib.pyplot as plt
 import matplotlib.transforms as mtransforms
 from matplotlib.font_manager import FontProperties
@@ -43,23 +45,28 @@ def _get_default_active_properties():
 
 def _get_default_passive_properties():
     return copy.deepcopy({
-        'can_play_if':'only_attacks',
-        'place_card_from_to':None,
+        'can_play_if':None,
+        'discard_to_top_of_deck':None,
         'exhaust_card_in':None,
+        'play_top_card':None,
+        'exhaust_it':None,
+        })
+
+def _get_default_power_properties():
+    return copy.deepcopy({
+        '':None,
         })
 
 class Card(object): 
 
     def __init__(self,name,category='skill',cost = 0,rarity='common',exhaust = False,
-            player = None,enemy = None,random_enemy = None,every_enemy = None,
-            passive = None,
+            player = {},enemy = {},random_enemy = {},every_enemy = {},passives = {},powers = {},
             display_mode = 'latex',image = None,show_card = False):
 
         self.display_mode = display_mode 
         self.show_card = show_card 
 
         if self.display_mode == 'latex':
-            matplotlib.use('ps')
             plt.rc('text', usetex=True)
             plt.rc('text.latex', preamble=[
                     '\usepackage{color}',
@@ -80,13 +87,20 @@ class Card(object):
                 'random_enemy':random_enemy,
                 'every_enemy':every_enemy,
                 }
-        passives = {
 
+        # load active properties
         for k,v in actives.items():
-            if v == None: continue
-            actives[k] = _get_default_active_properties() # get default settings
+            actives[k] = _get_default_active_properties()
             actives[k].update(v) # update with user settings
+        self.active_properties = actives
 
+        # load passive properties
+        self.passive_properties = _get_default_passive_properties() 
+        self.passive_properties.update(passives)
+
+        # load power properties
+        self.power_properties = _get_default_power_properties() 
+        self.power_properties.update(powers)
 
         self.name = name
         self.category = category
@@ -94,7 +108,6 @@ class Card(object):
         self.rarity = rarity
         self.exhaust = exhaust
 
-        self.active_properties = actives
 
 
     def __repr__(self):
@@ -110,6 +123,7 @@ class Card(object):
         prop_player = self.active_properties['player']
         prop_enemy  = self.active_properties['enemy']
         prop_every_enemy  = self.active_properties['every_enemy']
+        prop_passives = self.passive_properties
 
 
         if prop_enemy:
@@ -123,6 +137,9 @@ class Card(object):
         if prop_player:
             description += _boon_interpreter(prop_player)
             description += _special_boon_interpreter(prop_player)
+
+        if prop_passives:
+            description += _passive_interpreter(prop_passives)
 
         if self.exhaust:
             description += ['Exhaust.']
@@ -254,6 +271,8 @@ class Card(object):
             raw_input('Press enter to close...')
             plt.close()
 
+        print 'Finished {}!'.format(self.name)
+
     def _annotate_rectangle(self,rect,label,fs=20,weight='normal',ha='center'):
         dm = self.display_mode
 
@@ -268,7 +287,7 @@ class Card(object):
 # Still deciding what to do with this
 def _format_description(old_label,dm,weight='normal'):
 
-    char_limit = 20
+    char_limit = 22 
 
     colors = {
             'damage':'c1',
@@ -303,7 +322,7 @@ def _format_description(old_label,dm,weight='normal'):
             continue
         new_word = ''
     # add final word
-    if char_count + len(new_word) > 18: label += '\n' + new_word
+    if char_count + len(new_word) > char_limit: label += '\n' + new_word
     else: label += ' ' + new_word
     label = label[1:] # remove starting space
 
@@ -312,19 +331,48 @@ def _format_description(old_label,dm,weight='normal'):
     if dm == 'latex':
         for identifier,color in colors.items():
             label = label.replace(identifier,r'\textcolor{{{0}}}{{{1}}}'.format(color,identifier))
-            label = label.replace(identifier.capitalize(),r'\textcolor{{{0}}}{{{1}}}'.format(color,identifier.capitalize()))
+            label = label.replace(identifier.capitalize(),r'\textcolor{{{0}}}{{{1}}}'.format(
+                color,identifier.capitalize()))
 
-    if weight == 'normal':
+    if weight == 'normal' or dm == 'default':
         return label
     if weight == 'bold':
         return r'\textbf{{{0}}}'.format(label)
 
+def _power_interpreter(prop):
+    description = []
+
+    
+
+    return description
+
 def _passive_interpreter(prop):
-    pass
+    """ Text for passives """
+    description = []
+
+    if prop['can_play_if']:
+        if prop['can_play_if'] == 'only_attacks': 
+            description += ['Can only be played if every card in your hand is an Attack.']
+        elif prop['can_play_if'] == 'only_skills': 
+            description += ['Can only be played if every card in your hand is a Skill.']
+        elif prop['can_play_if'] == 'no_cards': 
+            description += ['Can only be played if there are no other cards in your hand.']
+
+    if prop['discard_to_top_of_deck']:
+        description += ['Place a card from your discard pile to the top of your deck.']
+    if prop['exhaust_card_in']:
+        description += ['Exhaust a card in your {}.'.format(prop['exhaust_card_in'])]
+    if prop['play_top_card']:
+        description += ['Play the top card of your draw pile.']
+    if prop['exhaust_it']:
+        description += ['Exhaust it.']
+
+    return description
 
 def _special_boon_interpreter(prop):
     """ Text for boons """
     description = []
+
     if prop['card_draw'] == 1:
         description += ['Draw {} card.'.format(prop['card_draw'])]
     if prop['card_draw'] > 1:
@@ -340,6 +388,7 @@ def _special_boon_interpreter(prop):
                 ]
     if prop['damage'] != 0:
         description += ['Lose {} HP.'.format(prop['damage'])]
+
     return description
 
 def _multiplier_interpreter(mult,label):
@@ -416,7 +465,36 @@ class CardDatabase(object):
         for name,card in self._database.items():
             print '{} - {}'.format(card.name,card.description)
 
+#------------------------------------------------------------------------------#
+
 database = CardDatabase()
+
+"""
+
+# ACTIVES #
+'damage': 0,
+'damage_repeat': 1,
+'block':  0,
+'mult_block': 0,
+'strength': 0,
+'energy': 0,
+'card_draw': 0,
+'temp_strength': 0,
+'mult_strength': 0,
+'vulnerable': 0,
+'weak': 0,
+'frail': 0,
+
+# PASSIVES #
+'can_play_if':None,
+'discard_to_top_of_deck':None,
+'exhaust_card_in':None,
+'play_top_card':None,
+'exhaust_it':None,
+
+"""
+
+#------------------------------------------------------------------------------#
 
 # DEFAULT CARDS
 database.submit_card(Card('Strike',cost = 1,rarity = 'common',category = 'attack',enemy = {'damage':2}))
@@ -441,10 +519,14 @@ database.submit_card(Card('Bloodletting',cost = 0,rarity = 'uncommon',category =
 
 # UNCATEGORIZED ATTACKS
 database.submit_card(Card('Pummel',cost = 1,rarity = 'common',category = 'attack',enemy = {'damage':1,'damage_repeat':3}))
-database.submit_card(Card('Clash',cost = 0,rarity = 'uncommon',category = 'attack',enemy = {'damage':3}))
+database.submit_card(Card('Clash',cost = 0,rarity = 'uncommon',category = 'attack',enemy = {'damage':3},passives = {'can_play_if':'only_attacks'}))
 database.submit_card(Card('Thunderclap',cost = 1,rarity = 'common',category = 'attack',every_enemy = {'damage':1,'vulnerable':1}))
 database.submit_card(Card('Pommel Strike',cost = 1,rarity = 'common',category = 'attack',enemy = {'damage':2},player = {'card_draw':1}))
 database.submit_card(Card('Shrug It Off',cost = 1,rarity = 'common',category = 'skill',player = {'block':2,'card_draw':1}))
+database.submit_card(Card('Headbutt',cost = 1,rarity = 'common',category = 'attack',enemy = {'damage':2},passives={'discard_to_top_of_deck':1}))
+database.submit_card(Card('Havoc',cost = 1,rarity = 'common',category = 'skill',passives = {'play_top_card':True,'exhaust_it':True}))
+database.submit_card(Card('True Grit',cost = 1,rarity = 'common',category = 'skill',player = {'block':2},passives={'exhaust_card_in':'hand'}))
+
 
 # DEFENSIVE SKILLS
 database.submit_card(Card('Entrench',cost = 1,rarity = 'uncommon',category = 'skill',player = {'mult_block':2}))
