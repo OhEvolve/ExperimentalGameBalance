@@ -2,9 +2,11 @@
 __version__ = 'v0.0.1'
 
 #standard libraries
+import os
 import copy
 
 # nonstandard libraries
+from PyPDF2 import PdfFileMerger
 import matplotlib
 matplotlib.use('ps')
 
@@ -31,6 +33,7 @@ def _get_default_active_properties():
     return copy.deepcopy({
             'damage': 0,
             'damage_repeat': 1,
+            'damage_x': 0,
             'block':  0,
             'mult_block': 0,
             'strength': 0,
@@ -55,6 +58,7 @@ def _get_default_passive_properties():
         'add_wound_to':None,
         'exhaust_hand':None,
         'damage_for_each_card_exhausted':None,
+        'block_for_each_card_exhausted':None,
         'move_exhaust_to':None,
         'double_next_attack':None,
         })
@@ -65,6 +69,8 @@ def _get_default_power_properties():
         'when_then':None,
         'when_then_this_turn':None,
         'start_of_turn':None,
+        'end_of_turn':None,
+        'skills_cost':None,
         })
 
 class Card(object): 
@@ -165,6 +171,7 @@ class Card(object):
 
         cost_coordinate = (0.72,0.91)
         rarity_colors = {
+                'starter':(1.0,1.0,1.0),
                 'common':(0.8,0.8,0.8),
                 'uncommon':'#99ffff',
                 'rare':'#FFD700',
@@ -172,13 +179,15 @@ class Card(object):
         title_color = rarity_colors[self.rarity]
         
         cc = cost_coordinate
+        
+        scale = 0.6
 
-        _,ax = plt.subplots(1,1,figsize = (8,8))
+        _,ax = plt.subplots(1,1,figsize = (scale*8,scale*14))
         
         plt.axis('off')
         self.ax = ax
 
-        ax.set_xlim((-0.05,1.05))
+        ax.set_xlim((0.18,0.84))
         ax.set_ylim((-0.05,1.05))
 
         background = FancyBboxPatch((0.3, 0.1),
@@ -216,14 +225,19 @@ class Card(object):
                          ec=(0.0, 0.0, 0.0))
 
         #arr_img = plt.imread('./img/attack.png', format='png')
-        if self.category == 'attack':
-            arr_img = plt.imread('./img/default_attack.jpg', format='jpg')
-        elif self.category == 'skill':
-            arr_img = plt.imread('./img/default_skill.jpg', format='jpg')
-        elif self.category == 'power':
-            arr_img = plt.imread('./img/default_power.png', format='png')
+        try:
+            arr_img = plt.imread('./img/{}.png'.format(self.name.replace(' ','_')), format='png')
+            
+        except IOError:
+            print 'No image found for {}! Using default...'.format(self.name)
+            if self.category == 'attack':
+                arr_img = plt.imread('./img/default_attack.jpg', format='jpg')
+            elif self.category == 'skill':
+                arr_img = plt.imread('./img/default_skill.jpg', format='jpg')
+            elif self.category == 'power':
+                arr_img = plt.imread('./img/default_power.png', format='png')
 
-        imagebox = OffsetImage(arr_img, zoom=0.2,resample=True, dpi_cor=False)
+        imagebox = OffsetImage(arr_img, zoom=0.175,resample=True, dpi_cor=False)
         imagebox.image.axes = ax
 
         ab = AnnotationBbox(imagebox, (0.5,0.5),
@@ -278,7 +292,7 @@ class Card(object):
         '''
         
         
-        plt.savefig('./cards/{}.ps'.format(self.name),dpi=__dpi__)
+        plt.savefig('./cards/{}.eps'.format(self.name),dpi=__dpi__,bbox_inches='tight',pad_inches=0)
 
         if self.show_card:
             plt.show(block=False)
@@ -348,6 +362,9 @@ def _format_description(old_label,dm,weight='normal'):
             if identifier == 'exhaust':
                 label = label.replace('Exhausted',r'\textcolor{{{0}}}{{{1}}}'.format(
                     color,'Ex{}hausted'))
+            if identifier == 'block':
+                label = label.replace('unblocked',r'\textcolor{{{0}}}{{{1}}}'.format(
+                    color,'un{}blocked'))
             label = label.replace(identifier,r'\textcolor{{{0}}}{{{1}}}'.format(color,identifier))
             label = label.replace(identifier.capitalize(),r'\textcolor{{{0}}}{{{1}}}'.format(
                 color,identifier.capitalize()))
@@ -359,6 +376,9 @@ def _format_description(old_label,dm,weight='normal'):
 
 def _power_interpreter(prop):
     description = []
+
+    if prop['skills_cost']:
+        description += ['Skills cost {}'.format(prop['skills_cost'])]
     if prop['when_then']:
         when,then = _parse_conditional(prop['when_then'])
         description += ['Whenever you {} {}.'.format(when,_oxford_comma(then))]
@@ -367,9 +387,23 @@ def _power_interpreter(prop):
         description += ['Whenever you {} {} this turn.'.format(when,_oxford_comma(then))]
     if prop['start_of_turn']:
         when,then = _parse_conditional(prop['start_of_turn'])
-        description += ['If you {} {} at the start of your turn.'.format(when,_oxford_comma(then))]
+        if when:
+            description += ['If you {} {} at the start of your turn.'.format(
+                when,_oxford_comma(then))]
+        else:
+            description += ['At the start of your turn, {}.'.format(
+                _oxford_comma(then))]
+    if prop['end_of_turn']:
+        when,then = _parse_conditional(prop['end_of_turn'])
+        if when:
+            description += ['If you {} {} at the end of your turn.'.format(
+                when,_oxford_comma(then))]
+        else:
+            description += ['At the end of your turn, {}.'.format(
+                _oxford_comma(then))]
     if prop['no_block_expiration']:
         description += ['Block no longer expires at the end of your turn.']
+
     return description
 
 def _parse_conditional(prop):
@@ -377,14 +411,20 @@ def _parse_conditional(prop):
     # interpret when statement
     if prop[0] == 'attack':
         when += 'play an Attack,'
+    if prop[0] == 'skill':
+        when += 'play a Skill,'
     if prop[0] == 'block':
         when += 'you gain block,'
     if prop[0] == 'lose hp':
         when += 'lose HP,'
+    if prop[0] == 'lose hp from a card':
+        when += 'lose HP from a card,'
     if prop[0] == 'under 50%':
         when += 'are under 50\% HP,'
     if prop[0] == 'exhaust':
         when += 'exhaust a card,'
+    if prop[0] == 'status':
+        when += 'draw a Status card,'
     # interpret then statement
     if 'damage' in prop[1]:
         then += ['deal {} damage to ALL enemies'.format(prop[1]['damage'])]
@@ -394,6 +434,10 @@ def _parse_conditional(prop):
         then += ['lose {} HP'.format(prop[1]['lose hp'])]
     if 'energy' in prop[1]:
         then += ['gain {} energy'.format(prop[1]['energy'])]
+    if 'exhaust' in prop[1]:
+        then += ['Exhaust it']
+    if 'strength' in prop[1]:
+        then += ['gain {} strength'.format(prop[1]['strength'])]
     if 'card_draw' in prop[1]:
         if prop[1]['card_draw'] == 1:
             then += ['draw 1 card']
@@ -425,17 +469,25 @@ def _passive_interpreter(prop):
     if prop['heal_unblocked_damage']:
         description += ['Heal for unblocked damage dealt.']
     if prop['heal_on_kill']:
-        description += ['If this kills the enemy, gain {} HP.'.format(prop['heal_on_kill'])]
+        description += ['If this kills an enemy, gain {} max HP permanently.'.format(
+            prop['heal_on_kill'])]
     if prop['add_wound_to']:
-        if prop['add_wound_to'] == 'hand':
-            description += ['Add a wound to your hand.']
-        else:
-            description += ['Add a wound to your {} pile.'.format(prop['add_wound_to'])]
+        if prop['add_wound_to'][0] == 'hand': target = 'hand'
+        else: target = '{} pile'.format(prop['add_wound_to'][0])
+        if prop['add_wound_to'][1] == 1: count = 'a wound'
+        else: count = '{} wounds'.format(prop['add_wound_to'][1])
+        description += ['Add {} to your {}.'.format(count,target)]
     if prop['exhaust_hand']:
-        description += ['Exhaust your hand.'] 
+        if prop['exhaust_hand'] == 'non-attack':
+            description += ['Exhaust all non-Attack your hand.'] 
+        else:
+            description += ['Exhaust your hand.'] 
     if prop['damage_for_each_card_exhausted']:
         description += ['Deal {} damage for each Exhausted card.'.format(
             prop['damage_for_each_card_exhausted'])]
+    if prop['block_for_each_card_exhausted']:
+        description += ['Gain {} Block for each Exhausted card.'.format(
+            prop['block_for_each_card_exhausted'])]
     if prop['move_exhaust_to']:
         if prop['move_exhaust_to'] == 'hand':
             description += ['Choose an Exhausted card and put it in your hand.']
@@ -503,6 +555,10 @@ def _damage_interpreter(prop,suffix = ''):
     elif prop['damage_repeat'] > 2:
         repeat_text = ' {} times'.format(n2w(prop['damage_repeat']))
 
+    # catch X damage
+    if prop['damage_x']:
+        return ['Spend all energy. Deal {} X times{}.'.format(prop['damage_x'],suffix)]
+
     # put together damage text
     if prop['damage'] == 'block':
         return ['Deal damage equal to your current block{}{}.'.format(repeat_text,suffix)]
@@ -543,6 +599,79 @@ class CardDatabase(object):
         for name,card in self._database.items():
             print '{} - {}'.format(card.name,card.description)
 
+    def get_counts(self):
+
+        sets = {
+                'rarity':{
+                        'starter':0,
+                        'common':0,
+                        'uncommon':0,
+                        'rare':0,
+                        },
+                'category':{
+                        'attack': 0,
+                        'power':  0,
+                        'skill':  0,
+                        },
+                'cost':{
+                        0:   0,
+                        1:   0,
+                        2:   0,
+                        3:   0,
+                        'X': 0,
+                        },
+                }
+
+        for name,card in self._database.items():
+            sets['rarity'][card.rarity] += 1
+            sets['category'][card.category] += 1
+            sets['cost'][card.cost] += 1
+
+        # print all info
+        for s,counts in sets.items():
+            print 'By {}:'.format(s)
+            for t,count in counts.items():
+                print '> {} - {}'.format(t,count)
+            print ''
+
+
+    def get_printable_pdf(self):
+
+        starter = {
+            'Strike':10,
+            'Defend':8,
+            'Bash':2,
+            }
+
+        copy_count = {
+                'common':  6,
+                'uncommon':4,
+                'rare':    2,
+                }
+
+        pdf_copies = []
+
+        for name,card in self._database.items():
+
+            ps_file =  './cards/' + name + '.eps'
+            pdf_file = './cards/' + name + '.pdf'
+            os.system('ps2pdf -dEPSCrop "{}" "{}"'.format(ps_file,pdf_file))
+
+            if card.rarity == 'starter': cps = starter[name] 
+            else: cps = copy_count[card.rarity]
+            
+            for _ in xrange(cps): pdf_copies.append(pdf_file)
+
+            print 'Finished converting {} to PDF!'.format(name)
+
+        merger = PdfFileMerger()
+
+        for pdf in pdf_copies:
+            merger.append(open(pdf, 'rb'))
+
+        with open('all_cards.pdf', 'wb') as fout:
+            merger.write(fout)
+
 #------------------------------------------------------------------------------#
 
 database = CardDatabase()
@@ -574,27 +703,26 @@ database = CardDatabase()
 
 #------------------------------------------------------------------------------#
 
-'''
 # DEFAULT CARDS
-database.submit_card(Card('Strike',cost = 1,rarity = 'common',category = 'attack',enemy = {'damage':2}))
-database.submit_card(Card('Defend',cost = 1,rarity = 'common',category = 'skill',player  = {'block':2}))
-database.submit_card(Card('Bash',cost = 2,rarity = 'common',category = 'attack',enemy = {'damage':2,'vulnerable':2}))
+database.submit_card(Card('Strike',cost = 1,rarity = 'starter',category = 'attack',enemy = {'damage':2}))
+database.submit_card(Card('Defend',cost = 1,rarity = 'starter',category = 'skill',player  = {'block':2}))
+database.submit_card(Card('Bash',cost = 2,rarity = 'starter',category = 'attack',enemy = {'damage':2,'vulnerable':2}))
 
 # STRENGTH CARDS
 database.submit_card(Card('Limit Break',cost = 1,rarity = 'rare',category = 'skill',player = {'mult_strength':2}))
-database.submit_card(Card('Flex',cost = 0,rarity = 'uncommon',category = 'skill',player = {'temp_strength':1}))
+database.submit_card(Card('Flex',cost = 0,rarity = 'common',category = 'skill',player = {'temp_strength':1}))
 
 # AOE CARDS
 database.submit_card(Card('Cleave',cost = 1,rarity = 'common',category = 'attack',every_enemy = {'damage':2}))
-database.submit_card(Card('Cleave',cost = 2,rarity = 'rare',category = 'attack',every_enemy = {'damage':2},passives = {'heal_unblocked_damage':True}))
+database.submit_card(Card('Reaper',cost = 2,rarity = 'rare',category = 'attack',every_enemy = {'damage':2},passives = {'heal_unblocked_damage':True}))
 
 # ACCELERANT CARDS
-database.submit_card(Card('Offering',cost = 1,rarity = 'rare',category = 'skill',exhaust = True,player = {'energy':2,'card_draw':3,'damage':2}))
+database.submit_card(Card('Offering',cost = 1,rarity = 'rare',category = 'skill',exhaust = True,player = {'energy':2,'card_draw':2,'damage':1}))
 
 # FAST-PLAY
 database.submit_card(Card('Quick Strike',cost = 0,rarity = 'common',category = 'attack',enemy = {'damage':1}))
-database.submit_card(Card('Seeing Red',cost = 0,rarity = 'common',category = 'skill',exhaust = True,player = {'energy':2}))
-database.submit_card(Card('Bloodletting',cost = 0,rarity = 'uncommon',category = 'skill',player = {'energy':1,'damage':1}))
+database.submit_card(Card('Seeing Red',cost = 0,rarity = 'uncommon',category = 'skill',exhaust = True,player = {'energy':2}))
+database.submit_card(Card('Bloodletting',cost = 0,rarity = 'uncommon',category = 'skill',player = {'energy':2,'damage':1}))
 database.submit_card(Card('Clash',cost = 0,rarity = 'uncommon',category = 'attack',enemy = {'damage':3},passives = {'can_play_if':'only_attacks'}))
 
 
@@ -612,21 +740,23 @@ database.submit_card(Card('Shrug It Off',cost = 1,rarity = 'common',category = '
 database.submit_card(Card('Headbutt',cost = 1,rarity = 'common',category = 'attack',
     enemy = {'damage':2},
     passives={'discard_to_top_of_deck':1}))
-database.submit_card(Card('Feed',cost = 1,rarity = 'common',category = 'attack',exhaust = True,
+database.submit_card(Card('Feed',cost = 1,rarity = 'rare',category = 'attack',exhaust = True,
     enemy = {'damage':3},
-    passives={'heal_on_kill':2}))
+    passives={'heal_on_kill':1}))
 database.submit_card(Card('Double Tap',cost = 1,rarity = 'rare',category = 'skill',
     passives={'double_next_attack':True}))
 database.submit_card(Card('Bludgeon',cost = 3,rarity = 'rare',category = 'attack',
     enemy = {'damage':10}))
+database.submit_card(Card('Hemokinesis',cost = 1,rarity = 'uncommon',category = 'attack',
+    player = {'damage':1},enemy = {'damage':4}))
 
 # WOUND CARDS
 database.submit_card(Card('Immolate',cost = 2,rarity = 'rare',category = 'attack',
     every_enemy = {'damage':4},
-    passives = {'add_wound_to':'discard'}))
+    passives = {'add_wound_to':('discard',1)}))
 
 # EXHAUST CARDS
-database.submit_card(Card('Fiend Fire',cost = 2,rarity = 'rare',category = 'attack',exhaust = True,
+database.submit_card(Card('Fiend Fire',cost = 2,rarity = 'rare',category = 'attack',exhaust = False,
     passives = {'exhaust_hand':True,'damage_for_each_card_exhausted':2}))
 database.submit_card(Card('Havoc',cost = 1,rarity = 'common',category = 'skill',
     passives = {'play_top_card':True,'exhaust_it':True}))
@@ -642,29 +772,52 @@ database.submit_card(Card('True Grit',cost = 1,rarity = 'common',category = 'ski
     player = {'block':2},passives={'exhaust_card_in':'hand'}))
 database.submit_card(Card('Impervious',cost = 2,rarity = 'rare',category = 'skill',exhaust = True,
     player = {'block':8}))
-'''
+
+database.submit_card(Card('Second Wind',cost = 1,rarity = 'uncommon',category = 'skill',
+    passives = {'exhaust_hand':'non-attack','block_for_each_card_exhausted':2}))
+database.submit_card(Card('Sever Soul',cost = 2,rarity = 'uncommon',category = 'attack',
+    passives = {'exhaust_hand':'non-attack'}, enemy = {'damage':4}))
 database.submit_card(Card('Rage',cost = 0,rarity = 'uncommon',category = 'skill',
     powers = {'when_then_this_turn':('attack',{'block':1})}))
+database.submit_card(Card('Power Through',cost = 1,rarity = 'uncommon',category = 'skill',
+    player = {'block':4},
+    passives = {'add_wound_to':('hand',2)}))
+database.submit_card(Card('Reckless Charge',cost = 0,rarity = 'uncommon',category = 'attack',
+    enemy = {'damage':2},
+    passives = {'add_wound_to':('discard',1)}))
+
+database.submit_card(Card('Whirlwind',cost = 'X',rarity = 'uncommon',category = 'attack',
+    every_enemy = {'damage_x':2}))
+database.submit_card(Card('Uppercut',cost = 2,rarity = 'uncommon',category = 'skill',exhaust = True,
+    enemy = {'damage':3,'weak':1,'vulnerable':1}))
+database.submit_card(Card('Shockwave',cost = 2,rarity = 'uncommon',category = 'skill',exhaust = True,
+    every_enemy = {'weak':3,'vulnerable':3}))
 
 # POWERS
 database.submit_card(Card('Barricade',cost = 2,rarity = 'rare',category = 'power',
     powers = {'no_block_expiration':True}))
-database.submit_card(Card('Beserk',cost = 0,rarity = 'rare',category = 'power',
+database.submit_card(Card('Berserk',cost = 0,rarity = 'rare',category = 'power',
     powers = {'start_of_turn':('under 50%',{'energy':1})}))
 database.submit_card(Card('Juggernaut',cost = 0,rarity = 'rare',category = 'power',
-    powers = {'when_then':('exhaust',{'block':2})}))
+    powers = {'when_then':('block',{'damage':1})}))
 database.submit_card(Card('Inflame',cost = 1,rarity = 'common',category = 'power',
     player = {'strength':1}))
-
-database.submit_card(Card('DELETE ME',cost = 1,rarity = 'rare',category = 'power',
-    powers = {'when_then':('lose HP',{'card_draw':1})}))
-
-
-'''
-        'no_block_expiration':None,
-        'when_then':None,
-        'start_of_turn':None,
-'''
+database.submit_card(Card('Combust',cost = 1,rarity = 'uncommon',category = 'power',
+    powers = {'end_of_turn':('',{'lose hp':1,'damage':2})}))
+database.submit_card(Card('Corruption',cost = 1,rarity = 'uncommon',category = 'power',
+    powers = {'skills_cost':0,'when_then':('skill',{'exhaust':True})}))
+database.submit_card(Card('Evolve',cost = 1,rarity = 'uncommon',category = 'power',
+    powers = {'when_then':('status',{'card_draw':1})}))
+database.submit_card(Card('Feel No Pain',cost = 1,rarity = 'uncommon',category = 'power',
+    powers = {'when_then':('exhaust',{'block':1})}))
+database.submit_card(Card('Metallicize',cost = 1,rarity = 'uncommon',category = 'power',
+    powers = {'end_of_turn':('',{'block':1})}))
+database.submit_card(Card('Rupture',cost = 1,rarity = 'uncommon',category = 'power',
+    powers = {'when_then':('lose hp from a card',{'strength':1})}))
+database.submit_card(Card('Dark Embrace',cost = 2,rarity = 'rare',category = 'power',
+    powers = {'when_then':('exhaust',{'card_draw':1})}))
+database.submit_card(Card('Brutality',cost = 0,rarity = 'rare',category = 'power',
+    powers = {'start_of_turn':('',{'lose hp':1,'card_draw':1})}))
 
 
 

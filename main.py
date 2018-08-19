@@ -21,6 +21,10 @@ card.view()
 for card in database._database.values():
     card.view()
 
+database.get_counts()
+
+database.get_printable_pdf()
+
 
 
 
