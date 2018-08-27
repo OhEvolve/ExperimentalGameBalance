@@ -1,0 +1,4 @@
+*.pyc
+cards/*
+monsters/*
+all*

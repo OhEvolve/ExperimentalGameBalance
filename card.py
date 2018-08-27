@@ -93,8 +93,7 @@ class Card(object):
                     '\definecolor{c5}{rgb}{1.0,0.6,0.0}',
                     '\definecolor{c6}{rgb}{0.0,0.4,0.15}',
                     '\definecolor{c7}{rgb}{0.35,0.35,0.35}',
-                    ]
-                    )
+                    ])
 
         # create default properties
         actives = {
@@ -170,12 +169,14 @@ class Card(object):
     def view(self):
 
         cost_coordinate = (0.72,0.91)
+
         rarity_colors = {
                 'starter':(1.0,1.0,1.0),
                 'common':(0.8,0.8,0.8),
                 'uncommon':'#99ffff',
                 'rare':'#FFD700',
                 }
+
         title_color = rarity_colors[self.rarity]
         
         cc = cost_coordinate
@@ -204,10 +205,6 @@ class Card(object):
         ax.annotate(_format_description(self.cost,dm=self.display_mode,weight='bold'),
                 (cc[0],cc[1]), color='black',
                 ha='center', va='center', fontsize=20, fontweight='bold')
-        '''
-        ax.annotate(self.cost, cost_coordinate, color='black', weight='bold',
-            fontsize=20, ha='center', va='center',fontproperties=font)
-        '''
 
         # Create title box
         title_rect = Rectangle((0.27, 0.87),
@@ -371,6 +368,7 @@ def _format_description(old_label,dm,weight='normal'):
 
     if weight == 'normal' or dm == 'default':
         return label
+
     if weight == 'bold':
         return r'\textbf{{{0}}}'.format(label)
 
@@ -577,8 +575,6 @@ def _oxford_comma(my_list):
         return (', '.join(my_list[:-1]) + ' and ' + my_list[-1])
 
 
-
-
 class CardDatabase(object):
 
     def __init__(self):
@@ -671,6 +667,8 @@ class CardDatabase(object):
 
         with open('all_cards.pdf', 'wb') as fout:
             merger.write(fout)
+
+
 
 #------------------------------------------------------------------------------#
 

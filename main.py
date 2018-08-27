@@ -1,4 +1,5 @@
 
+"""
 from card import database
 from deck import Deck
 
@@ -24,6 +25,7 @@ for card in database._database.values():
 database.get_counts()
 
 database.get_printable_pdf()
+"""
 
 
 
