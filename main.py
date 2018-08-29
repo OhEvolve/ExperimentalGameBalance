@@ -1,34 +1,14 @@
 
-"""
-from card import database
-from deck import Deck
+from cards.card import Card
 
-my_deck = Deck()
-my_deck.link(database)
+import cards.relics.database as relic_db
+import cards.monsters.database as monster_db
 
-my_deck.load_card('Strike',4)
-my_deck.load_card('Defend',5)
-my_deck.load_card('Bash',1)
+db = {}
 
-my_deck.display()
+db['relics'] = relic_db.make()
+db['monsters'] = monster_db.make()
 
-database.display()
-
-'''
-card = database.request('Bash')
-card.view()
-'''
-
-for card in database._database.values():
-    card.view()
-
-database.get_counts()
-
-database.get_printable_pdf()
-"""
-
-
-
-
-
+print db['relics']
+print db['monsters']
 
