@@ -1,4 +1,3 @@
 *.pyc
-cards/*
-monsters/*
-all*
+pdf/*
+final/*
