@@ -168,7 +168,7 @@ def _parse_attack_text(attack):
         if 'poison' in attack: 
             text += ['apply {} poison'.format(attack['poison'])]
 
-        all_text += [(_oxford_comma(text)).capitalize() + ' to player.']
+        all_text += [(oxford_comma(text)).capitalize() + ' to player.']
 
     # Interpret all enemy attacks
     if any([tag in attack for tag in all_enemy_tags]):
@@ -185,7 +185,7 @@ def _parse_attack_text(attack):
             text += ['apply {} weak'.format(attack['weak_all'])]
         if 'poison_all' in attack: 
             text += ['apply {} poison'.format(attack['poison_all'])]
-        all_text += [(_oxford_comma(text)).capitalize() + ' to ALL players.']
+        all_text += [(oxford_comma(text)).capitalize() + ' to ALL players.']
 
     # Interpret self buffs
     if any([tag in attack for tag in all_self_tags]):
@@ -194,7 +194,7 @@ def _parse_attack_text(attack):
             text += ['{} block'.format(attack['block'])]
         if 'strength' in attack: 
             text += ['{} strength'.format(attack['strength'])]
-        all_text += ['Gain ' + (_oxford_comma(text)) + '.']
+        all_text += ['Gain ' + (oxford_comma(text)) + '.']
 
     # Case dependent
     if 'remove_conditions' in attack: 
@@ -248,7 +248,7 @@ def _parse_attack_text(attack):
     final_text = format_text_linebreaks(' '.join(all_text))
     return final_text
 
-def _oxford_comma(my_list):
+def oxford_comma(my_list):
     """ Join a series of items w/ oxford comma """
     if len(my_list) == 1:
         return (my_list[0])
@@ -318,13 +318,11 @@ def format_text_colors(label):
     return label
 
 
-def _add_annotation(ax,text = '',loc = (.5,.5),fs = 24,**kwargs):
+def _add_annotation(ax,text = '',loc = (.5,.5),fs = 24,ha='center',va='center',**kwargs):
     
-    ax.annotate(format_text_colors(text),loc,va='center',ha='center',
+    ax.annotate(format_text_colors(text),loc,va=va,ha=va,
             color='black',fontsize=fs)
 
-#def _format_description(text):
-#    return text
 
 def _add_image(ax,fname = None,loc = (.5,.5),**kwargs):
 
