@@ -1,0 +1,78 @@
+
+from utils.deck import CardPile
+
+
+class Battle(object):
+
+    def __init__(self,player,monster,ai = None):
+
+        self.player = player
+        self.monster = monster 
+
+        self.state = {}
+
+        self.state['player'] = {
+                'max_hp':                player.max_hp,
+                'card_draw':                         5,
+                'max_energy':                        3,
+                'strength':                          0,
+                'vulnerable':                        0,
+                'weak':                              0,
+                'poison':                            0,
+                'deck':             player.deck.copy(name = 'Deck Instance'),
+                'discard':                        CardPile(name = 'discard'),
+                'exhaust':                        CardPile(name = 'exhaust'),
+                'hand':                              CardPile(name = 'hand'),
+                }
+
+        self.state['monster'] = {
+                'max_hp':          monster.max_hp,
+                'strength':                     0,
+                'vulnerable':                   0,
+                'weak':                         0,
+                'poison':                       0,
+                'attacks':  dict(monster.attacks),
+                }
+
+    def start(self):
+        """ Start combat """
+
+        self.state['player']['hp'] = self.player.max_hp
+        self.state['player']['deck'].shuffle()
+
+        self.state['monster']['hp'] = self.monster.max_hp
+
+        self.player_turn()
+
+    def player_turn(self):
+
+        new_hand = self.state['player']['deck'].draw(
+                num = self.state['player']['card_draw'])
+
+        if len(new_hand) < self.state['player']['card_draw']:
+            deck += self.state['player']['discard'].take_all()
+            new_hand += self.state['player']['deck'].draw(
+                    num = self.state['player']['card_draw'] - len(new_hand))
+
+        self.state['player']['hand'] = new_hand
+        self.state['player']['energy'] = self.state['player']['max_energy'] 
+
+    def _draw_hand(self):
+        self._draw_cards(num = self.state['player']['card_draw']) 
+
+    def _draw_cards(self,num = 1)
+        new_cards = self.state['player']['deck'].draw(num = num)
+
+        if len(new_hand) < self.state['player']['card_draw']:
+            deck += self.state['player']['discard'].take_all()
+            new_cards += self.state['player']['deck'].draw(
+                    num = self.state['player']['card_draw'] - len(new_hand))
+
+        self.state['player']['hand'] += new_cards
+
+    def is_finished(self):
+        if self.state['player']['hp'] <= 0:
+            return self.monster
+        elif self.state['monster']['hp'] <= 0:
+            return self.player
+

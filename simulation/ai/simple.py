@@ -12,4 +12,4 @@ class ObjectiveAI(object):
 
         self.objective = objective
 
-    def Cardplay
+

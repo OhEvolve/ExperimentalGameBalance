@@ -1,4 +1,4 @@
 
 
-def play_card
+def play_card(self):
 

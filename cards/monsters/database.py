@@ -33,7 +33,7 @@ def make(render = False,printable = False):
     # SQUIDER
     monster = database.get_card_by_name("Squidman")
     monster.update(
-            hp = 20,
+            max_hp = 20,
             copies = 1,
             value = 4,
             passive = None,
@@ -49,7 +49,7 @@ def make(render = False,printable = False):
     # GREMLIN 
     monster = database.get_card_by_name("Gremlin")
     monster.update(
-            hp = 20,
+            max_hp = 20,
             copies = 1,
             value = 4,
             passive = {'instances':2},
@@ -64,7 +64,7 @@ def make(render = False,printable = False):
     # SPECTRE
     monster = database.get_card_by_name("Spectre")
     monster.update(
-            hp = 10,
+            max_hp = 10,
             copies = 1,
             value = 4,
             passive = {'damage_reduced_to':1},
@@ -80,7 +80,7 @@ def make(render = False,printable = False):
     # GREEN GHOULS
     monster = database.get_card_by_name("Green Ghouls")
     monster.update(
-            hp = 6,
+            max_hp = 6,
             copies = 1,
             value = 4,
             passive = {'instances':3},
@@ -96,7 +96,7 @@ def make(render = False,printable = False):
     # FLOATING ORB
     monster = database.get_card_by_name("Floating Orb")
     monster.update(
-            hp = 5,
+            max_hp = 5,
             copies = 1,
             value = 4,
             passive = {'no_block_expiration':True,'starting_block':10},
@@ -112,7 +112,7 @@ def make(render = False,printable = False):
     # SLIME
     monster = database.get_card_by_name("Slime")
     monster.update(
-            hp = 20,
+            max_hp = 20,
             copies = 1,
             value = 4,
             passive = {'strength_each_turn':1},
@@ -127,7 +127,7 @@ def make(render = False,printable = False):
     # MIMICK
     monster = database.get_card_by_name("Mimick")
     monster.update(
-            hp = 20,
+            max_hp = 20,
             copies = 1,
             value = 4,
             passive = {'consume_gold':1},
@@ -142,7 +142,7 @@ def make(render = False,printable = False):
     # GOBLIN
     monster = database.get_card_by_name("Goblins")
     monster.update(
-            hp = 10,
+            max_hp = 10,
             copies = 1,
             value = 4,
             passive = {'instances':2,'block_damage_multiplier':2},
@@ -157,7 +157,7 @@ def make(render = False,printable = False):
     # ICE ELEMENTAL
     monster = database.get_card_by_name("Ice Elemental")
     monster.update(
-            hp = 25,
+            max_hp = 25,
             copies = 1,
             value = 4,
             passive = {'card_cost_change':(0,1)},
@@ -172,7 +172,7 @@ def make(render = False,printable = False):
     # EARTH ELEMENTAL
     monster = database.get_card_by_name("Earth Elemental")
     monster.update(
-            hp = 25,
+            max_hp = 25,
             copies = 1,
             value = 4,
             passive = {'block_convert_to_damage':True},
@@ -187,7 +187,7 @@ def make(render = False,printable = False):
     # GIANT SCORPION
     monster = database.get_card_by_name("Giant Scorpion")
     monster.update(
-            hp = 15,
+            max_hp = 15,
             copies = 1,
             value = 4,
             passive = {'block_each_turn':2},
@@ -207,7 +207,7 @@ def make(render = False,printable = False):
     # CREATURE OF THE DEPTH 
     monster = database.get_card_by_name("Creature of the Depth")
     monster.update(
-            hp = 40,
+            max_hp = 40,
             copies = 1,
             value = 10,
             passive = {'strength_per':('Skill','Power')},
@@ -221,21 +221,21 @@ def make(render = False,printable = False):
     # SPIDER QUEEN 
     monster = database.get_card_by_name("Spider Queen")
     monster.update(
-            hp = 50,
+            max_hp = 50,
             copies = 1,
             value = 10,
-            passive = {'spawn_spiders':{'count':1,'hp':2,'damage_all':1}},
+            passive = {'spawn_spiders':{'count':1,'max_hp':2,'damage_all':1}},
             attacks = [
                 ((1,2),{'poison_all':2,'vulnerable_all':2}),
                 ((3,4),{'spider_strength':1}),
-                ((5,6),{'spawn_spiders':{'count':2,'hp':4,'damage_all':1}}),
+                ((5,6),{'spawn_spiders':{'count':2,'max_hp':4,'damage_all':1}}),
                 ]
             )
     
     # ABYSSAL 
     monster = database.get_card_by_name("Abyssal")
     monster.update(
-            hp = 15,
+            max_hp = 15,
             copies = 1,
             value = 10,
             passive = {'block_convert_to_damage':True},
@@ -249,7 +249,7 @@ def make(render = False,printable = False):
     # ENT 
     monster = database.get_card_by_name("Ent")
     monster.update(
-            hp = 15,
+            max_hp = 15,
             copies = 1,
             value = 10,
             passive = {'block_convert_to_damage':True},
@@ -266,7 +266,7 @@ def make(render = False,printable = False):
     #"The Rift Walker"
     monster = database.get_card_by_name("The Summoner")
     monster.update(
-            hp = 100,
+            max_hp = 100,
             copies = 1,
             value = 20,
             passive = {'lose_strength_on_attack':True,'strength_per':'card'},
@@ -279,7 +279,7 @@ def make(render = False,printable = False):
 
     monster = database.get_card_by_name("The Rift Walker")
     monster.update(
-            hp = 80,
+            max_hp = 80,
             copies = 1,
             value = 20,
             passive = {'lose_strength_on_attack':True,'strength_per':'card'},

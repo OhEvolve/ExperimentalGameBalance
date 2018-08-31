@@ -7,7 +7,7 @@ class Monster(Card):
 
     template_filename = './img/templates/Basic_Monster_Template.png'
     dimensions = (6,11)
-    categories = ('name','rarity','hp')
+    categories = ('name','rarity','max_hp')
     label = 'monsters'
 
     annotations = [
@@ -22,11 +22,11 @@ class Monster(Card):
     
     def __init__(self,name,rarity = 'basic'):
         
-        self._stats = ['name','rarity','hp','instances','copies','passive','attacks','value']
+        self._stats = ['name','rarity','max_hp','instances','copies','passive','attacks','value']
 
         self.name = name
         self.rarity = rarity
-        self.hp = 10
+        self.max_hp = 10
         self.instances = 1
         self.value = 5 
         self.copies = 1
@@ -43,7 +43,7 @@ class Monster(Card):
         return r'\textbf{{{0}}}'.format(self.value)
 
     def get_health_text(self):
-        return r'\textbf{{{0}}}'.format(self.hp)
+        return r'\textbf{{{0}}}'.format(self.max_hp)
 
     def get_passive_text(self):
 
@@ -107,7 +107,7 @@ class Monster(Card):
     def overview(self):
         print '-- {} --'.format(self.name)
         print 'Rarity: {}'.format(self.rarity)
-        print 'HP: {}'.format(self.hp)
+        print 'HP: {}'.format(self.max_hp)
         print 'Instances: {}'.format(self.instances)
         print 'Deck Copies: {}'.format(self.copies)
         print 'Passives: {}'.format(self.passive)

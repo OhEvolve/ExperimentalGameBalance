@@ -15,16 +15,24 @@ class CardPile(object):
 
     def __iadd__(self,new_card):
         """ Add a card to database """
-        self.contents += [result]
+        if isinstance(new_card,list):
+            self.contents += new_card 
+        else:
+            self.contents += [new_card]
+        return self
 
     def add_card(self,new_card,copies = 1):
         """ Add card to deck """
         for _ in xrange(copies):
             self.contents += [new_card]
 
+    def get_card(self,card_index):
+        """ Remove card in deck by index """
+        return self.contents[card_index]
+
     def remove_card(self,card_index):
         """ Remove card in deck by index """
-        return self.cards.pop(card_index)
+        return self.contents.pop(card_index)
 
     def __repr__(self):
         display = 'Card Pile - {}'.format(self.name)
@@ -34,6 +42,15 @@ class CardPile(object):
 
     def shuffle(self):
         random.shuffle(self.contents)
+
+    def draw(self,num = 1):
+        """ """
+        return [self.contents.pop(-1) for _ in xrange(num) if len(self.contents) > 0]
+
+    def take_all(self):
+        contents = self.contents
+        self.contents = []
+        return contents
 
     def copy(self,name = None):
         """ Smart copy of the pile """
