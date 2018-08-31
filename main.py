@@ -23,7 +23,10 @@ deck.add_card(strike,copies = 5)
 deck.add_card(defend,copies = 4)
 deck.add_card(bash,copies = 1)
 
+deck2 = deck.copy()
+
 deck.shuffle()
+
 
 
 

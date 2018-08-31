@@ -24,7 +24,7 @@ class CardPile(object):
 
     def remove_card(self,card_index):
         """ Remove card in deck by index """
-        self.cards.pop(card_index)
+        return self.cards.pop(card_index)
 
     def __repr__(self):
         display = 'Card Pile - {}'.format(self.name)
@@ -35,8 +35,14 @@ class CardPile(object):
     def shuffle(self):
         random.shuffle(self.contents)
 
-    def copy(self):
-        return copy.deepcopy(self)
+    def copy(self,name = None):
+        """ Smart copy of the pile """
+        if name == None: 
+            name = self.name + "_copy"
+        new_pile = CardPile(name = name)
+        new_pile.contents = copy.copy(self.contents)
+        return new_pile
+        #return copy.deepcopy(self)
 
 
      
