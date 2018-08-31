@@ -1304,9 +1304,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.089663182"
-     inkscape:cx="-3483.1451"
-     inkscape:cy="8565.0929"
+     inkscape:zoom="0.50721155"
+     inkscape:cx="-4243.1313"
+     inkscape:cy="5673.2407"
      inkscape:document-units="mm"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -1459,7 +1459,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3078,7 +3078,7 @@
          id="tspan1021"
          x="-1752.946"
          y="-1828.67"
-         style="stroke-width:0.26458332"></tspan></text>
+         style="stroke-width:0.26458332" /></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -3089,7 +3089,7 @@
          id="tspan1033"
          x="-1553.6268"
          y="-2181.8989"
-         style="stroke-width:0.26458332"></tspan></text>
+         style="stroke-width:0.26458332" /></text>
     <g
        style="filter:url(#filter1079)"
        class=""
@@ -3139,7 +3139,7 @@
            height="111.5285"
            x="-7129.4595"
            y="-4779.9424" /></flowRegion><flowPara
-         id="flowPara1117"></flowPara></flowRoot>    <flowRoot
+         id="flowPara1117" /></flowRoot>    <flowRoot
        transform="matrix(0.26458333,0,0,0.26458333,543.36055,194.88504)"
        xml:space="preserve"
        id="flowRoot2173-5-6-01-0-6-9-0-8-7"
@@ -3171,7 +3171,7 @@
          id="tspan1546"
          x="-974.52094"
          y="-2450.427"
-         style="stroke-width:0.26458332"></tspan></text>
+         style="stroke-width:0.26458332" /></text>
     <flowRoot
        transform="matrix(0.26458333,0,0,0.26458333,1340.2684,-1302.6612)"
        xml:space="preserve"
@@ -3183,7 +3183,17 @@
            height="59.282227"
            x="-8954.7998"
            y="-4388.3057" /></flowRegion><flowPara
-         id="flowPara2181-9-6-5-2-2-9-7-65-3-1">Exhume</flowPara></flowRoot>  </g>
+         id="flowPara2181-9-6-5-2-2-9-7-65-3-1">Exhume</flowPara></flowRoot>    <rect
+       style="opacity:0.98000004;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7215"
+       width="199.78926"
+       height="201.35419"
+       x="-1297.8477"
+       y="-1434.5784"
+       inkscape:export-filename="/home/pandyr/Projects/ExperimentalGameBalance/img/rect7215.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer5"
