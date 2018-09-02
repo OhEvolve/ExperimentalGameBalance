@@ -21,6 +21,9 @@ class CardPile(object):
             self.contents += [new_card]
         return self
 
+    def __len__(self):
+        return len(self.contents)
+
     def add_card(self,new_card,copies = 1):
         """ Add card to deck """
         for _ in xrange(copies):
@@ -28,11 +31,11 @@ class CardPile(object):
 
     def get_card(self,card_index):
         """ Remove card in deck by index """
-        return self.contents[card_index]
+        return self.contents[card_index-1]
 
     def remove_card(self,card_index):
         """ Remove card in deck by index """
-        return self.contents.pop(card_index)
+        return self.contents.pop(card_index-1)
 
     def __repr__(self):
         display = 'Card Pile - {}'.format(self.name)

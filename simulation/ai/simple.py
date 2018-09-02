@@ -11,5 +11,7 @@ class ObjectiveAI(object):
                     }
 
         self.objective = objective
+        
+         
 
 

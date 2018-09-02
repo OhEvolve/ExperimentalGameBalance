@@ -1,4 +1,10 @@
 
+# standard libraries
+import os
+import random
+
+# nonstandard libraries
+
 from utils.deck import CardPile
 
 _condition_modifier = [0,1,1,2,2,2,3,3,3,3,4]
@@ -34,12 +40,14 @@ class Battle(object):
 
         self.state['monster'] = {
                 'max_hp':          monster.max_hp,
+                'max_rolls':                    1,
                 'block':                        0,
                 'strength':                     0,
                 'vulnerable':                   0,
                 'weak':                         0,
                 'poison':                       0,
-                'attacks':  dict(monster.attacks),
+                'attacks':  dict([(roll,attack) 
+                    for rolls,attack in monster.attacks for roll in rolls]),
                 }
 
     def start(self):
@@ -47,26 +55,62 @@ class Battle(object):
 
         self.state['player']['hp'] = self.player.max_hp
         self.state['player']['deck'].shuffle()
-
         self.state['monster']['hp'] = self.monster.max_hp
 
         while not self.is_finished():
             self.player_turn()
+            self.enemy_turn()
 
 
 
     def player_turn(self):
         self._reset_energy()
-
         self._draw_hand()
 
         if self.ai == 'manual':
-            moveset = manual(self)
+            manual_moveset(self)
         else:
             moveset = self.ai(self)
+            _process_moveset(moveset,self.state)
+
+        self._discard_hand()
         
-        _process_moveset(moveset,self.state)
+    def enemy_turn(self,silent = False):
+
+        attacker = self.state['monster']
+        defender = self.state['player']
+
+        for _ in xrange(attacker['max_rolls']):
+            roll = random.randint(1,6)
+            attack = attacker['attacks'][roll]
+            
+            if 'damage' in attack:
+                damage = _get_damage(attack['damage'],attacker,defender)
+                hp_loss = _apply_damage(damage,defender)
+                print 'Enemy attacked for {} damage, caused {} HP loss!'.format(damage,hp_loss)
+            if 'damage_all' in attack:
+                damage = _get_damage(attack['damage_all'],attacker,defender)
+                hp_loss = _apply_damage(damage,defender)
+                print 'Enemy attacked for {} damage, caused {} HP loss!'.format(damage,hp_loss)
+            if 'block' in attack:
+                attacker['block'] += attack['block']
+                print 'Enemy gained {} block!'.format(attack['block'])
+            if 'vulnerable' in attack:
+                defender['vulnerable'] += attack['vulnerable']
+                print 'Recieved {} vulnerable!'.format(attack['vulnerable'])
+
+            raw_input()
+
+
+
+
+
+
+        
+        
          
+    def _discard_hand(self):
+        self.state['player']['discard'] += self.state['player']['hand'].take_all()
  
     def _draw_hand(self):
         self._draw_cards(num = self.state['player']['card_draw']) 
@@ -105,7 +149,7 @@ class Battle(object):
             return self.player
         return False
 
-def _process_moveset(moveset,state):
+def _process_moveset(moveset,state,silent = False):
 
     hand =    state['player']['hand']
     deck =    state['player']['deck']
@@ -115,8 +159,18 @@ def _process_moveset(moveset,state):
     defender = state['monster']
 
     for move in moveset:
+        card = hand.get_card(move)
 
-        card = hand.remove_card(move)
+        if card.cost > attacker['energy']:
+            raw_input('Not enough energy for {}!'.format(card))
+            continue
+
+        attacker['energy'] -= card.cost
+        hand.remove_card(move)
+        discard += card
+
+        #if silent: continue
+
         print 'Playing card: {}!'.format(card)
 
         if 'damage' in card.enemy:
@@ -129,9 +183,8 @@ def _process_moveset(moveset,state):
         if 'vulnerable' in card.enemy:
             defender['vulnerable'] += card.enemy['vulnerable']
             print 'Applied {} vulnerable!'.format(card.enemy['vulnerable'])
+    raw_input('')
 
-        print ''
-        discard += card
 
 def _get_damage(base,attacker,defender):
     """ """
@@ -150,16 +203,42 @@ def _apply_damage(damage,creature):
         creature['block'] = 0
     return starting_hp - creature['hp']
 
-def manual(battle):
+def card_input(my_str):
+    entry = raw_input(my_str)
+    if entry.isdigit():
+        return int(entry)
+    elif entry == "":
+        return None
+
+def manual_moveset(battle):
+    """ Manual control of bot performance """
+    state = battle.state
     player = battle.state['player']
     monster = battle.state['monster']
-    print 80*'-'
-    print 'Player - {}/{} HP'.format(player['hp'],player['max_hp'])
-    print 'Monster - {}/{} HP'.format(monster['hp'],monster['max_hp'])
-    print 80*'-'
-    print player['hand']
-    print 80*'-'
-    return [0]
+
+    while len(player['hand']) > 0:
+
+        os.system('cls' if os.name == 'nt' else 'clear')
+
+        print 80*'-'
+        print 'Player - {}/{} HP'.format(player['hp'],player['max_hp'])
+        print 'Monster - {}/{} HP'.format(monster['hp'],monster['max_hp'])
+        print 80*'-'
+        print 'Energy - {}/{}'.format(player['energy'],player['max_energy'])
+        print 80*'-'
+        print player['hand']
+        print 80*'-'
+
+        index = card_input('Select card to play: ')
+
+        if index == None:
+            break
+        elif index >= 1 and index <= len(player['hand']):
+            _process_moveset([index],state,silent = False)
+        else: 
+            raw_input('Card index out of range!')
+    
+    return None
 
 
 
