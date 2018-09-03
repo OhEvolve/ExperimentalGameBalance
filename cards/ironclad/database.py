@@ -197,7 +197,7 @@ def make(render = False,printable = False):
 
     database.get_card_by_name('Rage').update(
             cost = 0,category = 'skill',
-            powers = {'when_then_this_turn':('attack',{'block':1})})
+            player = {'when_then_this_turn':('attack',{'block':1})})
 
     database.get_card_by_name('Power Through').update(
             cost = 1,category = 'skill',
