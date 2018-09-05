@@ -1,4 +1,7 @@
 
+import itertools
+from openpyxl import load_workbook 
+
 from PyPDF2 import PdfFileMerger
 
 class CardDatabase(object):
@@ -49,6 +52,34 @@ class CardDatabase(object):
         self.id += 1
         return self
 
+    def load_excel(self,sheet = None):
+
+        # Assumes name is in first column
+        if sheet == None:
+            sheet = self._card_class.label.capitalize()
+            print 'No sheet specified! Using {}...'.format(sheet)
+            
+        wb = load_workbook(filename = 'Card_Database.xlsx',read_only = True)
+
+        try: ws = wb[sheet]
+        except:
+            print 'Worksheet {} not found!'.format(sheet)
+            return None
+
+        all_rows = ws.rows
+        header = [str(u.value).lower() for u in next(all_rows)]
+
+        if header[0].lower() != 'name':
+            print 'First column needs to be name, not {}'.format(header[0].value())
+
+        for row in all_rows:
+            row = [str(u.value) for u in row]
+            name = row[0]
+            card = self._card_class(name)
+            card.update(**dict(zip(header[1:],row[1:])))
+            self += card
+            print 'Added card: {}'.format(card)
+
     def update_lookup(self,new_item,category,value):
         """ Adds updated property and removes old to database lookup """
         name = new_item.name
@@ -70,15 +101,15 @@ class CardDatabase(object):
 
         for name,card in self._name2database.items():
 
-            pdf_file = './pdf/' + name + '.pdf'
-            for _ in xrange(card.copies): pdf_copies.append(pdf_file)
+            pdf_file = './pdf/{}/{}.pdf'.format(card.label,name)
+            for _ in xrange(int(card.copies)): pdf_copies.append(pdf_file)
 
         merger = PdfFileMerger()
 
         for pdf in pdf_copies:
             merger.append(open(pdf, 'rb'))
 
-        with open('all_{}.pdf'.format(self._card_class.label), 'wb') as fout:
+        with open('all_{}s.pdf'.format(self._card_class.label), 'wb') as fout:
             merger.write(fout)
 
 

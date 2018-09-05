@@ -58,17 +58,6 @@
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3338"
-       id="radialGradient3340"
-       cx="708.83636"
-       cy="1504.6549"
-       fx="708.83636"
-       fy="1504.6549"
-       r="222.06138"
-       gradientTransform="matrix(0.54300046,2.624288,-1.5854777,0.32805662,2200.5871,-906.67319)"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3338"
        id="radialGradient3340-1"
        cx="708.83636"
        cy="1504.6549"
@@ -107,9 +96,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.060837647"
-     inkscape:cx="-1379.4092"
-     inkscape:cy="-6611.2626"
+     inkscape:zoom="0.12167529"
+     inkscape:cx="-4739.5361"
+     inkscape:cy="2279.6508"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -261,10 +250,11 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Above"
-     style="display:inline">
+     style="display:inline;opacity:1">
     <g
        id="Basic_Monster_Template"
-       inkscape:label="#g10210">
+       inkscape:label="#g10210"
+       style="">
       <title
          id="title10216">Basic_Monster_Template</title>
       <rect
@@ -310,12 +300,14 @@
     </g>
     <g
        id="Coins"
-       inkscape:label="#g19308">
+       inkscape:label="#g19308"
+       style="">
       <title
          id="title20115">Coins</title>
       <g
          transform="translate(961.13051,-617.55897)"
-         id="g14064">
+         id="g14064"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015"
@@ -338,7 +330,8 @@
              id="flowPara14023">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(961.13051,-628.43148)"
-         id="g14057">
+         id="g14057"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0"
@@ -361,7 +354,8 @@
              id="flowPara14023-2">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1110.084,-630.60593)"
-         id="g14057-3">
+         id="g14057-3"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-8"
@@ -384,7 +378,8 @@
              id="flowPara14023-2-9">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1260.1247,-630.60593)"
-         id="g14057-9">
+         id="g14057-9"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-9"
@@ -407,7 +402,8 @@
              id="flowPara14023-2-0">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(959.94205,-468.19193)"
-         id="g14064-2">
+         id="g14064-2"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-9"
@@ -430,7 +426,8 @@
              id="flowPara14023-7">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(959.94205,-479.06453)"
-         id="g14057-4">
+         id="g14057-4"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-3"
@@ -453,7 +450,8 @@
              id="flowPara14023-2-4">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1108.8955,-481.23893)"
-         id="g14057-3-2">
+         id="g14057-3-2"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-8-2"
@@ -476,7 +474,8 @@
              id="flowPara14023-2-9-2">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1258.9362,-481.23893)"
-         id="g14057-9-8">
+         id="g14057-9-8"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-9-8"
@@ -499,7 +498,8 @@
              id="flowPara14023-2-0-8">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(961.18109,-319.3151)"
-         id="g14064-7">
+         id="g14064-7"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-3"
@@ -522,7 +522,8 @@
              id="flowPara14023-26">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(961.18109,-330.1877)"
-         id="g14057-5">
+         id="g14057-5"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-87"
@@ -545,7 +546,8 @@
              id="flowPara14023-2-1">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1110.1346,-332.3621)"
-         id="g14057-3-0">
+         id="g14057-3-0"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-8-4"
@@ -568,7 +570,8 @@
              id="flowPara14023-2-9-8">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1260.1753,-332.3621)"
-         id="g14057-9-6">
+         id="g14057-9-6"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-9-2"
@@ -591,7 +594,8 @@
              id="flowPara14023-2-0-3">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(959.99264,-169.9481)"
-         id="g14064-2-9">
+         id="g14064-2-9"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-9-2"
@@ -614,7 +618,8 @@
              id="flowPara14023-7-1">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(959.99264,-180.8207)"
-         id="g14057-4-7">
+         id="g14057-4-7"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-3-8"
@@ -637,7 +642,8 @@
              id="flowPara14023-2-4-4">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1108.9461,-182.9951)"
-         id="g14057-3-2-9">
+         id="g14057-3-2-9"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-8-2-2"
@@ -660,7 +666,8 @@
              id="flowPara14023-2-9-2-9">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1258.9868,-182.9951)"
-         id="g14057-9-8-9">
+         id="g14057-9-8-9"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-9-8-4"
@@ -683,7 +690,8 @@
              id="flowPara14023-2-0-8-5">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(956.83208,-21.408133)"
-         id="g14064-70">
+         id="g14064-70"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-8"
@@ -706,7 +714,8 @@
              id="flowPara14023-78">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(956.83208,-32.280733)"
-         id="g14057-2">
+         id="g14057-2"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-5"
@@ -729,7 +738,8 @@
              id="flowPara14023-2-01">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1105.7856,-34.455133)"
-         id="g14057-3-9">
+         id="g14057-3-9"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-8-6"
@@ -752,7 +762,8 @@
              id="flowPara14023-2-9-0">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1255.8263,-34.455133)"
-         id="g14057-9-7">
+         id="g14057-9-7"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-9-3"
@@ -775,7 +786,8 @@
              id="flowPara14023-2-0-5">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(955.64363,127.95887)"
-         id="g14064-2-6">
+         id="g14064-2-6"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-9-7"
@@ -798,7 +810,8 @@
              id="flowPara14023-7-4">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(955.64363,117.08627)"
-         id="g14057-4-74">
+         id="g14057-4-74"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-3-85"
@@ -821,7 +834,8 @@
              id="flowPara14023-2-4-0">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1104.5971,114.91187)"
-         id="g14057-3-2-6">
+         id="g14057-3-2-6"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-8-2-6"
@@ -844,7 +858,8 @@
              id="flowPara14023-2-9-2-8">1</flowPara></flowRoot>      </g>
       <g
          transform="translate(1254.6378,114.91187)"
-         id="g14057-9-8-96">
+         id="g14057-9-8-96"
+         style="">
         <circle
            style="opacity:0.98000004;fill:#ffff00;fill-opacity:1;stroke:#ffcc00;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path14015-0-9-8-0"
@@ -1216,14 +1231,17 @@
            id="flowPara14023-2-0-9-7-35">10</flowPara></flowRoot>    </g>
     <g
        id="g14064-6"
-       transform="translate(956.78143,-767.5996)" />
+       transform="translate(956.78143,-767.5996)"
+       style="" />
     <g
        id="Counters"
-       inkscape:label="#g20111">
+       inkscape:label="#g20111"
+       style="">
       <title
          id="title20113">Counters</title>
       <g
-         id="g15543">
+         id="g15543"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1270,7 +1288,8 @@
              id="flowPara15459-3">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1"
-         transform="translate(148.19083,-0.26339565)">
+         transform="translate(148.19083,-0.26339565)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1317,7 +1336,8 @@
              id="flowPara15459-3-0">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-4"
-         transform="translate(297.33863,1.2742107)">
+         transform="translate(297.33863,1.2742107)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1364,7 +1384,8 @@
              id="flowPara15459-3-0-1">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-9"
-         transform="translate(448.5025,2.3064162)">
+         transform="translate(448.5025,2.3064162)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1411,7 +1432,8 @@
              id="flowPara15459-3-8">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-9"
-         transform="translate(596.69334,2.0430162)">
+         transform="translate(596.69334,2.0430162)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1458,7 +1480,8 @@
              id="flowPara15459-3-0-3">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-4-7"
-         transform="translate(745.84112,3.5806162)">
+         transform="translate(745.84112,3.5806162)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1505,7 +1528,8 @@
              id="flowPara15459-3-0-1-4">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-0"
-         transform="translate(76.401823,-128.3901)">
+         transform="translate(76.401823,-128.3901)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1552,7 +1576,8 @@
              id="flowPara15459-3-7">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-5"
-         transform="translate(224.59266,-128.6535)">
+         transform="translate(224.59266,-128.6535)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1599,7 +1624,8 @@
              id="flowPara15459-3-0-16">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-4-5"
-         transform="translate(373.74044,-127.1159)">
+         transform="translate(373.74044,-127.1159)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1646,7 +1672,8 @@
              id="flowPara15459-3-0-1-47">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-97"
-         transform="translate(523.8452,-126.8525)">
+         transform="translate(523.8452,-126.8525)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1693,7 +1720,8 @@
              id="flowPara15459-3-6">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-50"
-         transform="translate(672.03603,-127.1159)">
+         transform="translate(672.03603,-127.1159)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1740,7 +1768,8 @@
              id="flowPara15459-3-0-5">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-4-0"
-         transform="translate(821.18382,-125.5783)">
+         transform="translate(821.18382,-125.5783)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1787,7 +1816,8 @@
              id="flowPara15459-3-0-1-0">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-4-58"
-         transform="translate(895.5501,3.6932251)">
+         transform="translate(895.5501,3.6932251)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1834,7 +1864,8 @@
              id="flowPara15459-3-0-1-7">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-9-7"
-         transform="translate(1046.714,4.7254251)">
+         transform="translate(1046.714,4.7254251)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1881,7 +1912,8 @@
              id="flowPara15459-3-8-8">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-9-8"
-         transform="translate(1194.9048,4.4620251)">
+         transform="translate(1194.9048,4.4620251)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1928,7 +1960,8 @@
              id="flowPara15459-3-0-3-7">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-4-7-7"
-         transform="translate(1344.0527,5.9996251)">
+         transform="translate(1344.0527,5.9996251)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1975,7 +2008,8 @@
              id="flowPara15459-3-0-1-4-8">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-4-5-4"
-         transform="translate(971.95193,-124.69687)">
+         transform="translate(971.95193,-124.69687)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2022,7 +2056,8 @@
              id="flowPara15459-3-0-1-47-3">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-97-8"
-         transform="translate(1122.0567,-124.43347)">
+         transform="translate(1122.0567,-124.43347)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2069,7 +2104,8 @@
              id="flowPara15459-3-6-3">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-50-2"
-         transform="translate(1270.2475,-124.69687)">
+         transform="translate(1270.2475,-124.69687)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2116,7 +2152,8 @@
              id="flowPara15459-3-0-5-9">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-1-4-0-5"
-         transform="translate(1419.3954,-123.15927)">
+         transform="translate(1419.3954,-123.15927)"
+         style="">
         <path
            sodipodi:type="star"
            style="opacity:0.98000004;fill:#c6afe9;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2163,9 +2200,11 @@
              id="flowPara15459-3-0-1-0-0">+1</flowPara></flowRoot>      </g>
       <g
          id="g15543-0-4"
-         transform="translate(2.8113938,-259.40294)">
+         transform="translate(2.8113938,-259.40294)"
+         style="">
         <g
-           id="g16774">
+           id="g16774"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2212,7 +2251,8 @@
                id="flowPara15459-3-7-1">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8"
-           transform="translate(149.99226,0.82171753)">
+           transform="translate(149.99226,0.82171753)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2259,7 +2299,8 @@
                id="flowPara15459-3-7-1-6">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-3"
-           transform="translate(297.94902,1.9484741)">
+           transform="translate(297.94902,1.9484741)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2306,7 +2347,8 @@
                id="flowPara15459-3-7-1-4">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8-1"
-           transform="translate(447.94127,2.7701741)">
+           transform="translate(447.94127,2.7701741)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2353,7 +2395,8 @@
                id="flowPara15459-3-7-1-6-4">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8-7"
-           transform="translate(594.53371,1.3851243)">
+           transform="translate(594.53371,1.3851243)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2400,7 +2443,8 @@
                id="flowPara15459-3-7-1-6-5">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-3-5"
-           transform="translate(742.49048,2.5118243)">
+           transform="translate(742.49048,2.5118243)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2447,7 +2491,8 @@
                id="flowPara15459-3-7-1-4-1">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8-1-0"
-           transform="translate(892.48271,3.3335243)">
+           transform="translate(892.48271,3.3335243)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2494,7 +2539,8 @@
                id="flowPara15459-3-7-1-6-4-2">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8-0"
-           transform="translate(1043.5147,4.4603361)">
+           transform="translate(1043.5147,4.4603361)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2541,7 +2587,8 @@
                id="flowPara15459-3-7-1-6-8">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-3-51"
-           transform="translate(1191.4714,5.5870361)">
+           transform="translate(1191.4714,5.5870361)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2588,7 +2635,8 @@
                id="flowPara15459-3-7-1-4-18">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8-1-7"
-           transform="translate(1341.4637,6.4087361)">
+           transform="translate(1341.4637,6.4087361)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2635,7 +2683,8 @@
                id="flowPara15459-3-7-1-6-4-1">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-2"
-           transform="translate(75.851572,-130.00394)">
+           transform="translate(75.851572,-130.00394)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2682,7 +2731,8 @@
                id="flowPara15459-3-7-1-3">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8-3"
-           transform="translate(225.84383,-129.18224)">
+           transform="translate(225.84383,-129.18224)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2729,7 +2779,8 @@
                id="flowPara15459-3-7-1-6-0">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-3-7"
-           transform="translate(373.80059,-128.05554)">
+           transform="translate(373.80059,-128.05554)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2776,7 +2827,8 @@
                id="flowPara15459-3-7-1-4-3">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8-1-5"
-           transform="translate(523.79284,-127.23384)">
+           transform="translate(523.79284,-127.23384)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2823,7 +2875,8 @@
                id="flowPara15459-3-7-1-6-4-13">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8-7-0"
-           transform="translate(670.38526,-128.61884)">
+           transform="translate(670.38526,-128.61884)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2870,7 +2923,8 @@
                id="flowPara15459-3-7-1-6-5-3">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-3-5-6"
-           transform="translate(818.34206,-127.49214)">
+           transform="translate(818.34206,-127.49214)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2917,7 +2971,8 @@
                id="flowPara15459-3-7-1-4-1-5">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8-1-0-6"
-           transform="translate(968.33426,-126.67044)">
+           transform="translate(968.33426,-126.67044)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -2964,7 +3019,8 @@
                id="flowPara15459-3-7-1-6-4-2-1">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8-0-9"
-           transform="translate(1119.3663,-125.54364)">
+           transform="translate(1119.3663,-125.54364)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3011,7 +3067,8 @@
                id="flowPara15459-3-7-1-6-8-3">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-3-51-8"
-           transform="translate(1267.323,-124.41694)">
+           transform="translate(1267.323,-124.41694)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3058,7 +3115,8 @@
                id="flowPara15459-3-7-1-4-18-8">+1</flowPara></flowRoot>        </g>
         <g
            id="g16774-8-1-7-6"
-           transform="translate(1417.3153,-123.59524)">
+           transform="translate(1417.3153,-123.59524)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3104,7 +3162,8 @@
                  id="rect15457-4-1-1-9-3-0-9" /></flowRegion><flowPara
                id="flowPara15459-3-7-1-6-4-1-2">+1</flowPara></flowRoot>        </g>
         <g
-           id="g17467">
+           id="g17467"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3151,7 +3210,8 @@
                id="flowPara15459-3-7-1-3-7">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-6"
-           transform="translate(149.19627,-0.81934462)">
+           transform="translate(149.19627,-0.81934462)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3198,7 +3258,8 @@
                id="flowPara15459-3-7-1-3-7-2">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-3"
-           transform="translate(299.65924,0.67755712)">
+           transform="translate(299.65924,0.67755712)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3245,7 +3306,8 @@
                id="flowPara15459-3-7-1-3-7-6">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-6-5"
-           transform="translate(448.85551,-0.14174288)">
+           transform="translate(448.85551,-0.14174288)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3292,7 +3354,8 @@
                id="flowPara15459-3-7-1-3-7-2-3">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-7"
-           transform="translate(598.65345,1.7648088)">
+           transform="translate(598.65345,1.7648088)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3339,7 +3402,8 @@
                id="flowPara15459-3-7-1-3-7-3">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-6-4"
-           transform="translate(747.84972,0.94550876)">
+           transform="translate(747.84972,0.94550876)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3386,7 +3450,8 @@
                id="flowPara15459-3-7-1-3-7-2-1">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-0"
-           transform="translate(894.38592,1.7648084)">
+           transform="translate(894.38592,1.7648084)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3433,7 +3498,8 @@
                id="flowPara15459-3-7-1-3-7-4">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-6-3"
-           transform="translate(1043.5822,0.94550841)">
+           transform="translate(1043.5822,0.94550841)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3480,7 +3546,8 @@
                id="flowPara15459-3-7-1-3-7-2-15">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-8"
-           transform="translate(1194.4674,5.0265651)">
+           transform="translate(1194.4674,5.0265651)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3527,7 +3594,8 @@
                id="flowPara15459-3-7-1-3-7-7">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-6-2"
-           transform="translate(1343.6636,4.2072651)">
+           transform="translate(1343.6636,4.2072651)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3574,7 +3642,8 @@
                id="flowPara15459-3-7-1-3-7-2-10">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-4"
-           transform="translate(77.527425,-127.95694)">
+           transform="translate(77.527425,-127.95694)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3621,7 +3690,8 @@
                id="flowPara15459-3-7-1-3-7-5">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-6-30"
-           transform="translate(226.72369,-128.77624)">
+           transform="translate(226.72369,-128.77624)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3668,7 +3738,8 @@
                id="flowPara15459-3-7-1-3-7-2-9">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-3-9"
-           transform="translate(377.18666,-127.27934)">
+           transform="translate(377.18666,-127.27934)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3715,7 +3786,8 @@
                id="flowPara15459-3-7-1-3-7-6-5">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-6-5-6"
-           transform="translate(526.38293,-128.09864)">
+           transform="translate(526.38293,-128.09864)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3762,7 +3834,8 @@
                id="flowPara15459-3-7-1-3-7-2-3-0">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-7-1"
-           transform="translate(676.18094,-126.19214)">
+           transform="translate(676.18094,-126.19214)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3809,7 +3882,8 @@
                id="flowPara15459-3-7-1-3-7-3-7">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-6-4-8"
-           transform="translate(825.37714,-127.01144)">
+           transform="translate(825.37714,-127.01144)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3856,7 +3930,8 @@
                id="flowPara15459-3-7-1-3-7-2-1-2">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-0-2"
-           transform="translate(971.91334,-126.19214)">
+           transform="translate(971.91334,-126.19214)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3903,7 +3978,8 @@
                id="flowPara15459-3-7-1-3-7-4-8">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-6-3-0"
-           transform="translate(1121.1096,-127.01144)">
+           transform="translate(1121.1096,-127.01144)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3950,7 +4026,8 @@
                id="flowPara15459-3-7-1-3-7-2-15-7">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-8-1"
-           transform="translate(1271.9948,-122.93034)">
+           transform="translate(1271.9948,-122.93034)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -3997,7 +4074,8 @@
                id="flowPara15459-3-7-1-3-7-7-5">+1</flowPara></flowRoot>        </g>
         <g
            id="g17467-6-2-7"
-           transform="translate(1421.191,-123.74964)">
+           transform="translate(1421.191,-123.74964)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4043,7 +4121,8 @@
                  id="rect15457-4-1-1-1-8-3-9-1" /></flowRegion><flowPara
                id="flowPara15459-3-7-1-3-7-2-10-8">+1</flowPara></flowRoot>        </g>
         <g
-           id="g18370">
+           id="g18370"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4089,7 +4168,8 @@
                  id="rect15457-4-1-1-1-8-4-0" /></flowRegion><flowPara
                id="flowPara15459-3-7-1-3-7-5-0">+1</flowPara></flowRoot>        </g>
         <g
-           id="g18381">
+           id="g18381"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4135,7 +4215,8 @@
                  id="rect15457-4-1-1-1-8-4-0-7" /></flowRegion><flowPara
                id="flowPara15459-3-7-1-3-7-5-0-0">+1</flowPara></flowRoot>        </g>
         <g
-           id="g18392">
+           id="g18392"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4182,7 +4263,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-8">+1</flowPara></flowRoot>        </g>
         <g
            id="g18392-6"
-           transform="translate(152.21521,2.1745529)">
+           transform="translate(152.21521,2.1745529)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4229,7 +4311,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-8-6">+1</flowPara></flowRoot>        </g>
         <g
            id="g18381-0"
-           transform="translate(453.38398,3.2617563)">
+           transform="translate(453.38398,3.2617563)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4276,7 +4359,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-0-9">+1</flowPara></flowRoot>        </g>
         <g
            id="g18392-0"
-           transform="translate(453.38398,3.2617563)">
+           transform="translate(453.38398,3.2617563)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4323,7 +4407,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-8-9">+1</flowPara></flowRoot>        </g>
         <g
            id="g18392-6-8"
-           transform="translate(605.59918,5.4363563)">
+           transform="translate(605.59918,5.4363563)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4370,7 +4455,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-8-6-7">+1</flowPara></flowRoot>        </g>
         <g
            id="g18381-6"
-           transform="translate(899.15718,5.4362596)">
+           transform="translate(899.15718,5.4362596)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4417,7 +4503,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-0-7">+1</flowPara></flowRoot>        </g>
         <g
            id="g18392-60"
-           transform="translate(899.15718,5.4362596)">
+           transform="translate(899.15718,5.4362596)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4464,7 +4551,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-8-65">+1</flowPara></flowRoot>        </g>
         <g
            id="g18392-6-3"
-           transform="translate(1051.3724,7.6108596)">
+           transform="translate(1051.3724,7.6108596)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4511,7 +4599,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-8-6-0">+1</flowPara></flowRoot>        </g>
         <g
            id="g18370-1"
-           transform="translate(78.825752,-129.9266)">
+           transform="translate(78.825752,-129.9266)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4558,7 +4647,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-4">+1</flowPara></flowRoot>        </g>
         <g
            id="g18381-9"
-           transform="translate(78.825752,-129.9266)">
+           transform="translate(78.825752,-129.9266)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4605,7 +4695,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-0-0">+1</flowPara></flowRoot>        </g>
         <g
            id="g18392-8"
-           transform="translate(78.825752,-129.9266)">
+           transform="translate(78.825752,-129.9266)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4652,7 +4743,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-8-2">+1</flowPara></flowRoot>        </g>
         <g
            id="g18392-6-32"
-           transform="translate(231.04096,-127.752)">
+           transform="translate(231.04096,-127.752)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4699,7 +4791,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-8-6-9">+1</flowPara></flowRoot>        </g>
         <g
            id="g18381-0-2"
-           transform="translate(532.20973,-126.6648)">
+           transform="translate(532.20973,-126.6648)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4746,7 +4839,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-0-9-6">+1</flowPara></flowRoot>        </g>
         <g
            id="g18392-0-0"
-           transform="translate(532.20973,-126.6648)">
+           transform="translate(532.20973,-126.6648)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4793,7 +4887,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-8-9-8">+1</flowPara></flowRoot>        </g>
         <g
            id="g18392-6-8-0"
-           transform="translate(684.42492,-124.4902)">
+           transform="translate(684.42492,-124.4902)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4840,7 +4935,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-8-6-7-0">+1</flowPara></flowRoot>        </g>
         <g
            id="g18381-6-2"
-           transform="translate(977.98294,-124.4903)">
+           transform="translate(977.98294,-124.4903)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4887,7 +4983,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-0-7-9">+1</flowPara></flowRoot>        </g>
         <g
            id="g18392-60-1"
-           transform="translate(977.98294,-124.4903)">
+           transform="translate(977.98294,-124.4903)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4934,7 +5031,8 @@
                id="flowPara15459-3-7-1-3-7-5-0-8-65-5">+1</flowPara></flowRoot>        </g>
         <g
            id="g18392-6-3-0"
-           transform="translate(1128.0236,-122.3157)">
+           transform="translate(1128.0236,-122.3157)"
+           style="">
           <path
              inkscape:transform-center-y="2.5653444e-05"
              inkscape:transform-center-x="1.9176723e-06"
@@ -4984,7 +5082,7 @@
     <g
        id="Relic-Template"
        inkscape:label="#g19070"
-       transform="translate(332.12291,335.19813)">
+       transform="translate(229.92125,224.29846)">
       <title
          id="title19072">Relic-Template</title>
       <rect
@@ -5021,31 +5119,37 @@
        xml:space="preserve"
        id="flowRoot20971"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
-         id="flowRegion20973"><rect
+         id="flowRegion20973"
+         style=""><rect
            id="rect20975"
            width="115.06034"
            height="61.639465"
            x="-6020.1211"
-           y="-11061.548" /></flowRegion><flowPara
+           y="-11061.548"
+           style="" /></flowRegion><flowPara
          id="flowPara20977" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot26545"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
-         id="flowRegion26547"><rect
+         id="flowRegion26547"
+         style=""><rect
            id="rect26549"
            width="464.91397"
            height="400.98831"
            x="-9042.5771"
-           y="-14213.83" /></flowRegion><flowPara
+           y="-14213.83"
+           style="" /></flowRegion><flowPara
          id="flowPara26551" /></flowRoot>    <g
        id="HP_and_BLOCK"
-       inkscape:label="#g34712">
+       inkscape:label="#g34712"
+       style="">
       <title
          id="title34714">HP_and_BLOCK</title>
       <g
          transform="translate(343.57154,-769.77421)"
          inkscape:label="#g23515"
-         id="HP">
+         id="HP"
+         style="">
         <title
            id="title23517">#g23515</title>
         <rect
@@ -8200,7 +8304,8 @@
              id="flowPara15459-30-2-9-7-9-8"
              style="stroke-width:0.69346392">1 HP</flowPara></flowRoot>      </g>
       <g
-         id="g30757">
+         id="g30757"
+         style="">
         <rect
            style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect20117-2-4-6-7"
@@ -8343,7 +8448,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-26">+1</flowPara></flowRoot>        <g
            id="g26702-7"
-           transform="translate(1672.2159,1771.0142)">
+           transform="translate(1672.2159,1771.0142)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -8352,7 +8458,8 @@
              id="rect20117-2-4-6-1-6"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-7">
+             id="g26690-7"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-43"
@@ -8525,7 +8632,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-0-2">+1</flowPara></flowRoot>        <g
            id="g26702-9-36"
-           transform="translate(1057.1732,1768.7075)">
+           transform="translate(1057.1732,1768.7075)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -8534,7 +8642,8 @@
              id="rect20117-2-4-6-1-7-9"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-3-9">
+             id="g26690-3-9"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-0-1"
@@ -8707,7 +8816,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-4-94">+1</flowPara></flowRoot>        <g
            id="g26702-0-3"
-           transform="translate(1672.2159,1892.8696)">
+           transform="translate(1672.2159,1892.8696)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -8716,7 +8826,8 @@
              id="rect20117-2-4-6-1-3-4"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-8-8">
+             id="g26690-8-8"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-07-9"
@@ -8889,7 +9000,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-0-7-58">+1</flowPara></flowRoot>        <g
            id="g26702-9-3-98"
-           transform="translate(1057.1732,1890.5627)">
+           transform="translate(1057.1732,1890.5627)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -8898,7 +9010,8 @@
              id="rect20117-2-4-6-1-7-8-7"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-3-7-5">
+             id="g26690-3-7-5"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-0-2-4"
@@ -9071,7 +9184,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-2-1">+1</flowPara></flowRoot>        <g
            id="g26702-99-9"
-           transform="translate(1670.6781,2016.4546)">
+           transform="translate(1670.6781,2016.4546)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -9080,7 +9194,8 @@
              id="rect20117-2-4-6-1-9-3"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-1-7">
+             id="g26690-1-7"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-9-7"
@@ -9253,7 +9368,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-0-4-8">+1</flowPara></flowRoot>        <g
            id="g26702-9-8-6"
-           transform="translate(1055.6356,2014.148)">
+           transform="translate(1055.6356,2014.148)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -9262,7 +9378,8 @@
              id="rect20117-2-4-6-1-7-6-5"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-3-8-1">
+             id="g26690-3-8-1"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-0-7-7"
@@ -9435,7 +9552,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-4-4-1">+1</flowPara></flowRoot>        <g
            id="g26702-0-6-6"
-           transform="translate(1670.6781,2138.3101)">
+           transform="translate(1670.6781,2138.3101)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -9444,7 +9562,8 @@
              id="rect20117-2-4-6-1-3-1-8"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-8-7-4">
+             id="g26690-8-7-4"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-07-3-9"
@@ -9617,7 +9736,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-0-7-6-4">+1</flowPara></flowRoot>        <g
            id="g26702-9-3-9-8"
-           transform="translate(1055.6356,2136.0032)">
+           transform="translate(1055.6356,2136.0032)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -9626,7 +9746,8 @@
              id="rect20117-2-4-6-1-7-8-3-0"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-3-7-8-6">
+             id="g26690-3-7-8-6"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-0-2-0-7"
@@ -9799,7 +9920,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-8-1">+1</flowPara></flowRoot>        <g
            id="g26702-96-3"
-           transform="translate(1669.1406,2260.9341)">
+           transform="translate(1669.1406,2260.9341)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -9808,7 +9930,8 @@
              id="rect20117-2-4-6-1-92-0"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-2-7">
+             id="g26690-2-7"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-4-2"
@@ -9981,7 +10104,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-0-9-0">+1</flowPara></flowRoot>        <g
            id="g26702-9-5-3"
-           transform="translate(1054.098,2258.6272)">
+           transform="translate(1054.098,2258.6272)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -9990,7 +10114,8 @@
              id="rect20117-2-4-6-1-7-7-0"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-3-6-6">
+             id="g26690-3-6-6"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-0-3-8"
@@ -10163,7 +10288,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-4-9-7">+1</flowPara></flowRoot>        <g
            id="g26702-0-0-2"
-           transform="translate(1669.1406,2382.7893)">
+           transform="translate(1669.1406,2382.7893)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -10172,7 +10298,8 @@
              id="rect20117-2-4-6-1-3-0-8"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-8-5-6">
+             id="g26690-8-5-6"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-07-6-7"
@@ -10345,7 +10472,8 @@
              style="stroke-width:0.74470472"
              id="flowPara26537-7-8-0-7-5-8">+1</flowPara></flowRoot>        <g
            id="g26702-9-3-2-6"
-           transform="translate(1054.098,2380.4824)">
+           transform="translate(1054.098,2380.4824)"
+           style="">
           <rect
              y="-3597.4019"
              x="-2592.0496"
@@ -10354,7 +10482,8 @@
              id="rect20117-2-4-6-1-7-8-5-2"
              style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <g
-             id="g26690-3-7-4-9">
+             id="g26690-3-7-4-9"
+             style="">
             <flowRoot
                xml:space="preserve"
                id="flowRoot15453-37-2-6-9-0-6-0-2-5-2"
@@ -10388,229 +10517,10 @@
       </g>
     </g>
     <g
-       id="Starter_Ironclad_Template"
-       inkscape:label="#g3379">
-      <title
-         id="title3402">Starter_Ironclad_Template</title>
-      <rect
-         rx="59.424"
-         y="447.68448"
-         x="13.304268"
-         height="719.06201"
-         width="444.12314"
-         id="rect19002-7"
-         style="opacity:0.98000004;fill:#aa0000;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="572.33374"
-         x="47.99482"
-         height="256.24146"
-         width="374.13159"
-         id="rect10066-51-5"
-         style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="875.54218"
-         x="47.442329"
-         height="235.3327"
-         width="374.13159"
-         id="rect10066-51-8-3"
-         style="opacity:0.98000004;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="480.9144"
-         x="48.958199"
-         height="60.538204"
-         width="343.37949"
-         id="rect10066-51-0-5"
-         style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <circle
-         r="36.902546"
-         cy="511.40347"
-         cx="395.39746"
-         id="path6561"
-         style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-    <g
-       id="Common_Ironclad_Template"
-       inkscape:label="#g3386">
-      <title
-         id="title3404">Common_Ironclad_Template</title>
-      <rect
-         rx="59.424"
-         y="447.95422"
-         x="554.4295"
-         height="719.06201"
-         width="444.12314"
-         id="rect19002-7-3"
-         style="opacity:0.98000004;fill:#aa0000;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="572.60345"
-         x="589.12006"
-         height="256.24146"
-         width="374.13159"
-         id="rect10066-51-5-6"
-         style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="875.81189"
-         x="588.56757"
-         height="235.33272"
-         width="374.13159"
-         id="rect10066-51-8-3-7"
-         style="opacity:0.98000004;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="481.18411"
-         x="590.08344"
-         height="60.538204"
-         width="343.37949"
-         id="rect10066-51-0-5-5"
-         style="opacity:0.98000004;fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <circle
-         r="36.90255"
-         cy="511.67319"
-         cx="936.52271"
-         id="path6561-3"
-         style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-    <g
-       id="Uncommon_Ironclad_Template"
-       inkscape:label="#g3393">
-      <title
-         id="title3406">Uncommon_Ironclad_Template</title>
-      <rect
-         rx="59.424"
-         y="451.02942"
-         x="1106.4301"
-         height="719.06201"
-         width="444.12314"
-         id="rect19002-7-3-5"
-         style="opacity:0.98000004;fill:#aa0000;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="575.67865"
-         x="1141.1206"
-         height="256.24146"
-         width="374.13159"
-         id="rect10066-51-5-6-6"
-         style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="878.88708"
-         x="1140.5681"
-         height="235.33272"
-         width="374.13159"
-         id="rect10066-51-8-3-7-2"
-         style="opacity:0.98000004;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="484.25931"
-         x="1142.084"
-         height="60.538204"
-         width="343.37949"
-         id="rect10066-51-0-5-5-9"
-         style="opacity:0.98000004;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <circle
-         r="36.902554"
-         cy="514.74835"
-         cx="1488.5232"
-         id="path6561-3-1"
-         style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-    <g
-       id="Rare_Ironclad_Template"
-       inkscape:label="#g3400">
-      <title
-         id="title3408">Rare_Ironclad_Template</title>
-      <rect
-         rx="59.424"
-         y="451.02942"
-         x="1666.1188"
-         height="719.06201"
-         width="444.12314"
-         id="rect19002-7-3-2"
-         style="opacity:0.98000004;fill:#aa0000;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="575.67865"
-         x="1700.8093"
-         height="256.24146"
-         width="374.13159"
-         id="rect10066-51-5-6-7"
-         style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="878.88708"
-         x="1700.2568"
-         height="235.33272"
-         width="374.13159"
-         id="rect10066-51-8-3-7-0"
-         style="opacity:0.98000004;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         y="484.25928"
-         x="1701.7727"
-         height="60.538204"
-         width="343.37949"
-         id="rect10066-51-0-5-5-93"
-         style="opacity:0.98000004;fill:#ffcc00;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <circle
-         r="36.902554"
-         cy="514.74835"
-         cx="2048.2119"
-         id="path6561-3-6"
-         style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-    <g
-       id="Starter_Mesmer_Template"
-       inkscape:label="#g3437">
-      <title
-         id="title3627">Starter_Mesmer_Template</title>
-      <rect
-         rx="59.424"
-         y="1229.0581"
-         x="17.804979"
-         height="719.06201"
-         width="444.12314"
-         id="rect19002-7-7"
-         style="display:inline;opacity:0.98000004;fill:#ff00ff;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="rect19002-7-7-3"
-         d="m 107.17149,1225.983 74.26626,204.2325 -162.095018,-98.4575 v 76.0237 l 162.095018,34.7349 -162.095018,47.6084 v 75.1774 L 184.5125,1454.8171 v 13.8384 L 19.342732,1733.9934 v 151.6274 c 0,11.9975 3.5229,23.1404 9.59062,32.4611 l 169.418098,-454.039 -2.81276,481.0022 h 123.05347 l -107.94017,-487.1527 252.8135,386.8187 v -168.0936 l -246.66297,-237.1762 246.66297,52.5679 v -97.6111 l -252.8135,29.6674 229.87898,-185.6243 c -10.05769,-7.813 -22.7103,-12.4582 -36.48924,-12.4582 h -53.77605 l -154.9895,196.5446 -10.28412,-196.5446 z"
-         style="display:inline;opacity:0.98000004;fill:url(#radialGradient3340);fill-opacity:1;stroke:none;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <g
-         id="g3398">
-        <rect
-           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect10066-51-5-5"
-           width="374.13159"
-           height="256.24146"
-           x="51.94875"
-           y="1355.245" />
-        <rect
-           style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect10066-51-8-3-3"
-           width="373.89871"
-           height="251.40858"
-           x="51.512703"
-           y="1658.5698" />
-        <rect
-           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect10066-51-0-5-56"
-           width="343.37949"
-           height="60.538204"
-           x="52.912128"
-           y="1263.8256" />
-        <circle
-           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path6561-2"
-           cx="399.35138"
-           cy="1294.3147"
-           r="36.902546" />
-      </g>
-      <rect
-         style="display:inline;opacity:0.98000004;fill:none;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect9098"
-         width="444.12314"
-         height="719.06201"
-         x="17.804979"
-         y="1229.0581"
-         rx="59.424" />
-    </g>
-    <g
        id="Common_Mesmer_Template"
-       inkscape:label="#g3612">
+       inkscape:label="#g3612"
+       transform="translate(-339.22252)"
+       style="">
       <title
          id="title3629">Common_Mesmer_Template</title>
       <rect
@@ -10664,7 +10574,9 @@
     </g>
     <g
        id="Uncommon_Mesmer_Template"
-       inkscape:label="#g3594">
+       inkscape:label="#g3594"
+       transform="translate(-339.22252)"
+       style="">
       <title
          id="title3631">Uncommon_Mesmer_Template</title>
       <rect
@@ -10718,7 +10630,9 @@
     </g>
     <g
        id="Rare_Mesmer_Template"
-       inkscape:label="#g3603">
+       inkscape:label="#g3603"
+       transform="translate(-339.22252)"
+       style="">
       <title
          id="title3633">Rare_Mesmer_Template</title>
       <rect
@@ -10778,7 +10692,543 @@
       <title
          id="title3627-8">Starter_Mesmer_Template</title>
       <g
-         id="g3398-3" />
+         id="g3398-3"
+         style="" />
+    </g>
+    <g
+       id="Starter_Template"
+       inkscape:label="#g7813"
+       transform="translate(121.77218,-582.76689)"
+       style="">
+      <title
+         id="title7821">Starter_Template</title>
+      <g
+         id="g3398-0"
+         style="display:inline;opacity:1"
+         transform="translate(-781.53403,-235.39409)">
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect10066-51-5-5-6"
+           width="374.13159"
+           height="256.24146"
+           x="51.94875"
+           y="1355.245" />
+        <rect
+           style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect10066-51-8-3-3-2"
+           width="373.89871"
+           height="251.40858"
+           x="51.512703"
+           y="1658.5698" />
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect10066-51-0-5-56-6"
+           width="343.37949"
+           height="60.538204"
+           x="52.912128"
+           y="1263.8256" />
+        <circle
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path6561-2-1"
+           cx="399.35138"
+           cy="1294.3147"
+           r="36.902546" />
+      </g>
+      <rect
+         rx="59.424"
+         y="993.66406"
+         x="-763.72906"
+         height="719.06201"
+         width="444.12314"
+         id="rect19002-7-7-93"
+         style="display:inline;opacity:1;fill:#c8beb7;fill-opacity:0.78172589;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458"
+         width="374.13159"
+         height="256.24146"
+         x="-729.58527"
+         y="1119.851" />
+      <rect
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7460"
+         width="373.89871"
+         height="251.40858"
+         x="-730.0213"
+         y="1423.1758" />
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7462"
+         width="343.37949"
+         height="60.538204"
+         x="-728.62189"
+         y="1028.4315" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle7464"
+         cx="-382.18262"
+         cy="1058.9207"
+         r="36.902546" />
+      <rect
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7479"
+         width="444.12314"
+         height="719.06201"
+         x="-763.72906"
+         y="993.66406"
+         rx="59.424" />
+    </g>
+    <g
+       id="Common_Ironclad_Template"
+       inkscape:label="#g7760"
+       style="">
+      <title
+         id="title7815">Common_Ironclad_Template</title>
+      <rect
+         y="545.16278"
+         x="263.22153"
+         height="256.24146"
+         width="374.13159"
+         id="rect10066-51-5-5-6-3"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="848.48761"
+         x="262.78549"
+         height="251.40858"
+         width="373.89871"
+         id="rect10066-51-8-3-3-2-1"
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="453.74329"
+         x="264.18491"
+         height="60.538204"
+         width="343.37949"
+         id="rect10066-51-0-5-56-6-9"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="36.902546"
+         cy="484.23242"
+         cx="610.62415"
+         id="path6561-2-1-4"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         rx="59.424"
+         y="418.97598"
+         x="229.07771"
+         height="719.06201"
+         width="444.12314"
+         id="rect19002-7-7-93-7"
+         style="display:inline;opacity:1;fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="rect9098-8-8"
+         d="M 673.20091,439.06065 438.99298,672.81231 229.07762,462.48713 v 10.88408 l 204.4733,204.8722 -7.49048,7.4756 -196.98282,-197.3668 v 21.76611 l 186.09975,186.46299 -7.49101,7.4761 -178.60874,-178.95706 v 21.7656 l 167.7262,168.05326 h -5.3e-4 L 229.07762,546.86698 v 21.76611 l 156.84262,157.14852 -156.84262,156.5372 v 43.44718 l 178.56688,-178.21828 7.47603,7.4911 -186.04291,185.67968 v 21.7236 l 196.90477,-196.52028 7.47655,7.491 -204.38132,203.98178 v 10.8613 L 438.88963,778.85381 673.08521,1013.5055 c 0.074,-1.2188 0.1157,-2.4465 0.1157,-3.6845 V 991.85519 L 449.77267,767.99251 673.20091,991.85459 v -21.7661 l -212.54516,-212.95838 7.49101,-7.476 205.05415,205.45298 v -21.766 l -194.17109,-194.54938 7.49048,-7.4755 186.68061,187.04418 V 907.47691 L 491.96236,725.88501 673.20091,544.9994 v -10.86186 l -186.66976,186.30597 -7.47601,-7.4911 194.14577,-193.76746 v -21.72374 l -205.00766,204.6082 -7.47601,-7.4905 212.48367,-212.07029 z m -217.92573,260.94946 7.47655,7.4905 -7.49049,7.476 -7.47655,-7.491 z m -18.37355,18.3379 7.47603,7.4905 -7.4905,7.4765 -7.47654,-7.491 z m 36.71144,0.036 7.47656,7.491 -7.49049,7.4755 -7.47654,-7.4905 z m -18.37355,18.3379 7.47604,7.491 -7.4905,7.4761 -7.47654,-7.4906 z m -18.37354,18.3379 7.47603,7.491 h -5.3e-4 l -7.47603,-7.491 z"
+         style="display:inline;opacity:0.98000004;fill:#f4e3d7;fill-opacity:1;stroke:none;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-5"
+         width="374.13159"
+         height="256.24146"
+         x="263.22153"
+         y="545.16278" />
+      <rect
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7460-0"
+         width="373.89871"
+         height="251.40858"
+         x="262.78549"
+         y="848.48761" />
+      <rect
+         style="opacity:1;fill:#cbc8c8;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7462-3"
+         width="343.37949"
+         height="60.538204"
+         x="264.18491"
+         y="453.74329" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle7464-6"
+         cx="610.62415"
+         cy="484.23242"
+         r="36.902546" />
+      <rect
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7479-1"
+         width="444.12314"
+         height="719.06201"
+         x="229.07771"
+         y="418.97598"
+         rx="59.424" />
+    </g>
+    <g
+       id="Uncommon_Ironclad_Template"
+       inkscape:label="#g7774"
+       style="">
+      <title
+         id="title7817">Uncommon_Ironclad_Template</title>
+      <g
+         id="g3398-0-0"
+         style="display:inline;opacity:1"
+         transform="translate(707.76279,-813.00812)">
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect10066-51-5-5-6-6"
+           width="374.13159"
+           height="256.24146"
+           x="51.94875"
+           y="1355.245" />
+        <rect
+           style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect10066-51-8-3-3-2-3"
+           width="373.89871"
+           height="251.40858"
+           x="51.512703"
+           y="1658.5698" />
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect10066-51-0-5-56-6-2"
+           width="343.37949"
+           height="60.538204"
+           x="52.912128"
+           y="1263.8256" />
+        <circle
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path6561-2-1-0"
+           cx="399.35138"
+           cy="1294.3147"
+           r="36.902546" />
+      </g>
+      <rect
+         rx="59.424"
+         y="416.05008"
+         x="725.56775"
+         height="719.06201"
+         width="444.12314"
+         id="rect19002-7-7-93-6"
+         style="display:inline;opacity:1;fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="rect9098-8-1"
+         d="M 1169.691,436.13479 935.48306,669.88641 725.56765,459.56127 v 10.88408 l 204.47331,204.87225 -7.4905,7.47551 -196.98281,-197.36676 v 21.76611 l 186.09981,186.46304 -7.491,7.47601 -178.60881,-178.95702 v 21.7656 L 893.29386,711.9934 h -5e-4 L 725.56765,543.94112 v 21.76611 L 882.41026,722.85579 725.56765,879.393 v 43.44715 l 178.56691,-178.21825 7.476,7.49101 -186.04291,185.67974 v 21.7236 l 196.90481,-196.52029 7.4765,7.49102 -204.38131,203.98177 v 10.8613 L 935.37966,775.928 1169.5753,1010.5797 c 0.074,-1.2188 0.1157,-2.4465 0.1157,-3.6845 V 988.92935 L 946.26276,765.06665 1169.691,988.92875 v -21.7661 l -212.54514,-212.95839 7.491,-7.47604 205.05414,205.45303 v -21.766 l -194.17114,-194.54942 7.4905,-7.47551 186.68064,187.04423 v -10.8835 L 988.45246,722.95914 1169.691,542.07354 v -10.86186 l -186.66974,186.30593 -7.4761,-7.49102 194.14584,-193.7675 v -21.72374 l -205.00764,204.60819 -7.4761,-7.49051 212.48374,-212.07027 z m -217.92574,260.94944 7.4765,7.49049 -7.4905,7.47604 -7.4765,-7.49101 z m -18.3736,18.3379 7.4761,7.49049 -7.4905,7.47654 -7.4766,-7.49101 z m 36.7115,0.0356 7.4765,7.49104 -7.4905,7.47551 -7.4765,-7.49051 z m -18.3736,18.3379 7.4761,7.49104 -7.4905,7.47604 -7.4766,-7.49054 z m -18.3735,18.3379 7.476,7.49104 h -5e-4 l -7.476,-7.49104 z"
+         style="display:inline;opacity:0.98000004;fill:#f4e3d7;fill-opacity:1;stroke:none;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-55"
+         width="374.13159"
+         height="256.24146"
+         x="759.71155"
+         y="542.23688" />
+      <rect
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7460-4"
+         width="373.89871"
+         height="251.40858"
+         x="759.27551"
+         y="845.56171" />
+      <rect
+         style="opacity:1;fill:#03fafa;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7462-7"
+         width="343.37949"
+         height="60.538204"
+         x="760.67493"
+         y="450.81744" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle7464-65"
+         cx="1107.1141"
+         cy="481.30658"
+         r="36.902546" />
+      <rect
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7479-6"
+         width="444.12314"
+         height="719.06201"
+         x="725.56775"
+         y="416.05008"
+         rx="59.424" />
+    </g>
+    <g
+       id="Rare_Ironclad_Template"
+       inkscape:label="#g7788"
+       style="">
+      <title
+         id="title7819">Rare_Ironclad_Template</title>
+      <g
+         transform="translate(1201.8997,-814.8757)"
+         style="display:inline;opacity:1"
+         id="g7650">
+        <rect
+           y="1355.245"
+           x="51.94875"
+           height="256.24146"
+           width="374.13159"
+           id="rect7642"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           y="1658.5698"
+           x="51.512703"
+           height="251.40858"
+           width="373.89871"
+           id="rect7644"
+           style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           y="1263.8256"
+           x="52.912128"
+           height="60.538204"
+           width="343.37949"
+           id="rect7646"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <circle
+           r="36.902546"
+           cy="1294.3147"
+           cx="399.35138"
+           id="circle7648"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <rect
+         style="display:inline;opacity:1;fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7652"
+         width="444.12314"
+         height="719.06201"
+         x="1219.7047"
+         y="414.1825"
+         rx="59.424" />
+      <path
+         style="display:inline;opacity:0.98000004;fill:#f4e3d7;fill-opacity:1;stroke:none;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 1663.8278,434.26721 1429.6199,668.01883 1219.7045,457.69369 v 10.88408 l 204.4733,204.87225 -7.4905,7.47551 -196.9828,-197.36676 v 21.76611 l 186.0998,186.46304 -7.491,7.47601 -178.6088,-178.95702 v 21.7656 l 167.7262,168.05331 h -5e-4 L 1219.7045,542.07354 v 21.76611 l 156.8426,157.14856 -156.8426,156.53721 v 43.44715 l 178.5669,-178.21825 7.476,7.49101 -186.0429,185.67974 v 21.7236 l 196.9048,-196.52029 7.4765,7.49102 -204.3813,203.98177 v 10.8613 l 209.812,-209.40205 234.1956,234.65168 c 0.074,-1.2188 0.1157,-2.4465 0.1157,-3.6845 v -17.96583 l -223.4282,-223.8627 223.4282,223.8621 v -21.7661 l -212.5451,-212.95839 7.491,-7.47604 205.0541,205.45303 v -21.766 l -194.1711,-194.54942 7.4905,-7.47551 186.6806,187.04423 v -10.8835 L 1482.5893,721.09156 1663.8278,540.20596 V 529.3441 l -186.6697,186.30593 -7.4761,-7.49102 194.1458,-193.7675 v -21.72374 l -205.0076,204.60819 -7.4761,-7.49051 212.4837,-212.07027 z m -217.9257,260.94944 7.4765,7.49049 -7.4905,7.47604 -7.4765,-7.49101 z m -18.3736,18.3379 7.4761,7.49049 -7.4905,7.47654 -7.4766,-7.49101 z m 36.7115,0.0356 7.4765,7.49104 -7.4905,7.47551 -7.4765,-7.49051 z m -18.3736,18.3379 7.4761,7.49104 -7.4905,7.47604 -7.4766,-7.49054 z m -18.3735,18.3379 7.476,7.49104 h -5e-4 l -7.476,-7.49104 z"
+         id="path7654"
+         inkscape:connector-curvature="0" />
+      <rect
+         y="540.36932"
+         x="1253.8484"
+         height="256.24146"
+         width="374.13159"
+         id="rect7656"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="843.69415"
+         x="1253.4124"
+         height="251.40858"
+         width="373.89871"
+         id="rect7658"
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="448.94986"
+         x="1254.8118"
+         height="60.538204"
+         width="343.37949"
+         id="rect7660"
+         style="opacity:1;fill:#fdc800;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="36.902546"
+         cy="479.439"
+         cx="1601.2511"
+         id="circle7662"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         rx="59.424"
+         y="414.1825"
+         x="1219.7047"
+         height="719.06201"
+         width="444.12314"
+         id="rect7666"
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="Curse_Template"
+       inkscape:label="#g8067">
+      <title
+         id="title8069">Curse_Template</title>
+      <rect
+         y="1391.9816"
+         x="-623.15955"
+         height="256.24146"
+         width="374.13159"
+         id="rect10066-51-5-5-6-4"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="1695.3064"
+         x="-623.59558"
+         height="251.40858"
+         width="373.89871"
+         id="rect10066-51-8-3-3-2-5"
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         rx="59.424"
+         y="1265.7948"
+         x="-657.30334"
+         height="719.06201"
+         width="444.12314"
+         id="rect19002-7-7-93-4"
+         style="display:inline;opacity:1;fill:#333333;fill-opacity:0.78172589;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         inkscape:label="#rect7458-4"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="asdfasdf"
+         width="374.13159"
+         height="256.24146"
+         x="-623.15955"
+         y="1391.9817" />
+      <rect
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7460-3"
+         width="373.89871"
+         height="251.40858"
+         x="-623.59558"
+         y="1695.3065" />
+      <rect
+         style="opacity:1;fill:#afe9af;fill-opacity:1;stroke:#000000;stroke-width:7.26396275;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7462-0"
+         width="371.38406"
+         height="60.274242"
+         x="-622.44116"
+         y="1302.0697" />
+      <rect
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7479-8"
+         width="444.12314"
+         height="719.06201"
+         x="-657.30334"
+         y="1265.7948"
+         rx="59.424" />
+    </g>
+    <g
+       id="Status_Template"
+       inkscape:label="#g8124">
+      <title
+         id="title8126">Status_Template</title>
+      <rect
+         y="1383.5793"
+         x="-1164.2698"
+         height="256.24146"
+         width="374.13159"
+         id="rect10066-51-5-5-6-4-6"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="1686.9042"
+         x="-1164.7058"
+         height="251.40858"
+         width="373.89871"
+         id="rect10066-51-8-3-3-2-5-4"
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         rx="59.424"
+         y="1257.3926"
+         x="-1198.4136"
+         height="719.06201"
+         width="444.12314"
+         id="rect19002-7-7-93-4-0"
+         style="display:inline;opacity:1;fill:#ffeeaa;fill-opacity:0.78172589;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         inkscape:label="#rect7458-4"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="asdfasdf-0"
+         width="374.13159"
+         height="256.24146"
+         x="-1164.2698"
+         y="1383.5795" />
+      <rect
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.23288822;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7460-3-4"
+         width="373.89871"
+         height="251.40858"
+         x="-1164.7058"
+         y="1686.9043" />
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7.26396275;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7462-0-6"
+         width="371.38406"
+         height="60.274242"
+         x="-1163.5514"
+         y="1293.6675" />
+      <rect
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7479-8-2"
+         width="444.12314"
+         height="719.06201"
+         x="-1198.4136"
+         y="1257.3926"
+         rx="59.424" />
+    </g>
+    <g
+       id="Event_Template"
+       transform="translate(24.266114,-72.440768)"
+       inkscape:label="#g5788">
+      <title
+         id="title5790">Event_Template</title>
+      <rect
+         rx="29.395931"
+         y="-649.36255"
+         x="-2496.1946"
+         height="871.7547"
+         width="453.37613"
+         id="rect5984-6"
+         style="opacity:1;fill:#ffb380;fill-opacity:1;stroke:#000000;stroke-width:15.87046528;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+      <rect
+         style="opacity:0.98999999;fill:#f2f2f2;fill-opacity:1;stroke:#000000;stroke-width:7.53445816;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect6001-2-0-8"
+         width="385.832"
+         height="392.97565"
+         x="-2462.9829"
+         y="-206.85706" />
+      <rect
+         y="-610.98541"
+         x="-2460.3694"
+         height="371.00967"
+         width="379.79437"
+         id="rect10066-7"
+         style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.63448524;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="Treasure_Template"
+       inkscape:label="#g5895">
+      <title
+         id="title5897">Treasure_Template</title>
+      <rect
+         y="-508.33374"
+         x="-1790.1034"
+         height="256.24146"
+         width="374.13159"
+         id="rect10066-51-5-5-6-4-6-9"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         rx="59.424"
+         y="-634.52051"
+         x="-1824.2472"
+         height="719.06201"
+         width="444.12314"
+         id="rect19002-7-7-93-4-0-7"
+         style="display:inline;opacity:1;fill:#217844;fill-opacity:0.78172589;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         inkscape:label="#rect7458-4"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7.95959139;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="asdfasdf-0-8"
+         width="373.172"
+         height="332.16217"
+         x="-1789.6237"
+         y="-507.85382" />
+      <rect
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:6.30926037;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7460-3-4-4"
+         width="374.82233"
+         height="190.82797"
+         x="-1791.0012"
+         y="-143.96637" />
+      <rect
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:7.26396275;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7462-0-6-5"
+         width="371.38406"
+         height="60.274242"
+         x="-1789.385"
+         y="-598.24561" />
+      <rect
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:13.97125721;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7479-8-2-0"
+         width="444.12314"
+         height="719.06201"
+         x="-1824.2472"
+         y="-634.52051"
+         rx="59.424" />
     </g>
   </g>
   <g

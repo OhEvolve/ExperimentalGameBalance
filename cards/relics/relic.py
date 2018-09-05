@@ -7,7 +7,7 @@ class Relic(Card):
     template_filename = './img/templates/Relic_Template.png'
     dimensions = (6,10)
     categories = ('name',)
-    label = 'relics'
+    label = 'relic'
 
     annotations = [
             {'loc':(0.5,0.885),'fs':20,'text_fn':'get_name_text'},
@@ -20,7 +20,7 @@ class Relic(Card):
     
     def __init__(self,name):
         
-        self._stats = ['name','description']
+        self._stats = ['name','description','copies']
 
         self.name = name
         self.copies = 1 

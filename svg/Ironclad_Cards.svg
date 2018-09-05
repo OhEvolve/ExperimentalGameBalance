@@ -21,6 +21,48 @@
    inkscape:export-ydpi="96">
   <defs
      id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path11133"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path11130"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path11127"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
     <inkscape:path-effect
        effect="spiro"
        id="path-effect347"
@@ -1296,6 +1338,29 @@
          result="color2"
          id="feColorMatrix1083" />
     </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter11053">
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix11051" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Invert"
+       id="filter2788-7">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix2784-2" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         id="feColorMatrix2786-8" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -1304,9 +1369,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.50721155"
-     inkscape:cx="-4243.1313"
-     inkscape:cy="5673.2407"
+     inkscape:zoom="0.089663182"
+     inkscape:cx="-9895.9803"
+     inkscape:cy="8669.3489"
      inkscape:document-units="mm"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -3188,12 +3253,48 @@
        id="rect7215"
        width="199.78926"
        height="201.35419"
-       x="-1297.8477"
-       y="-1434.5784"
+       x="-713.60754"
+       y="-1405.3663"
        inkscape:export-filename="/home/pandyr/Projects/ExperimentalGameBalance/img/rect7215.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
-  </g>
+    <g
+       id="Spot_Weakness"
+       inkscape:label="#g11421">
+      <title
+         id="title11423">Spot Weakness</title>
+      <rect
+         y="-1430.4052"
+         x="-1492.9421"
+         height="189.87804"
+         width="188.83475"
+         id="rect11413"
+         style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:0.78172589;stroke:none;stroke-width:20;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:label="#path11034"
+         inkscape:connector-curvature="0"
+         id="asdfasdffd"
+         transform="matrix(0.32204599,0,0,0.32204599,303.64893,305.58916)"
+         d="m -5282.0938,-5322.2383 v 0.018 c -27.0759,0 -51.8784,13.9131 -70.5214,37.7441 -18.626,23.831 -30.5977,57.4905 -30.5977,94.8145 0,38.717 13.2558,73.4182 33.2188,97.4512 l 12.9238,15.6386 -19.9473,3.7578 c -56.755,10.705 -83.5918,32.5395 -99.1738,69.1485 -14.592,34.39 -17.6519,84.2331 -17.9629,147.9551 h 63.0996 v -64.9493 h 19.8867 v 64.9493 h 220.3731 v -64.9493 h 19.9804 v 64.9493 h 62.6348 c -0.018,-64.235 -0.6934,-115.2336 -13.9844,-150.1016 -14.133,-37.048 -40.1667,-58.9736 -102.0547,-68.7266 l -20.2949,-3.1894 12.8321,-16.0391 c 18.937,-23.776 30.6543,-57.9485 30.6543,-95.8945 0,-37.324 -11.9157,-70.9835 -30.5957,-94.8145 -18.644,-23.83 -43.4128,-37.7617 -70.4708,-37.7617 z m -6.2949,248.9336 h 14.4219 v 22.9258 c 36.503,3.457 65.3731,32.3261 68.8301,68.8281 h 22.9238 v 14.3711 h -22.9238 c -3.482,36.502 -32.3271,65.3731 -68.8301,68.8301 v 22.9492 h -14.4199 v -22.9492 c -36.502,-3.457 -65.3461,-32.3281 -68.8281,-68.8301 h -22.9258 v -14.3711 h 22.9258 c 3.457,-36.502 32.3261,-65.3711 68.8281,-68.8281 z m 0,38.5645 c -27.873,3.332 -49.8535,25.2904 -53.1855,53.1894 h 20.1172 v 14.3711 h -20.1172 c 3.332,27.899 25.3125,49.8555 53.1855,53.1875 v -20.0918 h 14.4219 v 20.0918 c 27.875,-3.332 49.8575,-25.2895 53.1895,-53.1875 h -20.1153 v -14.3711 h 20.1153 c -3.332,-27.9 -25.3145,-49.8574 -53.1895,-53.1894 v 20.1191 h -14.4199 z m 0,28.7207 h 14.4219 v 24.4687 h 22.1328 v 14.3711 h -22.1328 v 19.8418 h -14.4199 v -19.8418 h -22.1309 v -14.3711 h 22.1309 z"
+         style="fill:#ffffff;fill-opacity:1;filter:url(#filter11053)">
+        <title
+           id="title11093">fds</title>
+      </path>
+    </g>
+    <flowRoot
+       transform="matrix(0.26458333,0,0,0.26458333,928.10165,-55.64363)"
+       xml:space="preserve"
+       id="flowRoot2173-3-2-3-1-2-8-67"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion2175-6-9-1-28-8-3-5"><rect
+           id="rect2177-0-4-4-8-8-8-6"
+           width="419.82101"
+           height="60.040966"
+           x="-8954.7998"
+           y="-4388.3057" /></flowRegion><flowPara
+         id="flowPara2873-6-9-8-3-9">Spot Weakness</flowPara><flowPara
+         id="flowPara3029-6-3-8" /><flowPara
+         id="flowPara11091" /></flowRoot>  </g>
   <g
      inkscape:groupmode="layer"
      id="layer5"

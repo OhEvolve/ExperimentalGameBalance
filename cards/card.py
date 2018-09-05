@@ -72,9 +72,25 @@ class Card(object):
             if not stat in self._stats:
                 print 'Stat [{}] not recognized!'.format(stat)
                 continue
-            if stat in self.categories:
-                self.db_link.update_lookup(self,stat,value)
+            if self.db_link != None: # if db link already in place
+                if stat in self.categories:
+                    self.db_link.update_lookup(self,stat,value)
             setattr(self,stat,value)
+
+
+    def _add_template(self,ax):
+        """ Adds template """
+        # Submit as a str, or tuple (attr str, dictionary)
+        if isinstance(self.template_filename,str):
+            template_filename = self.template_filename
+
+        elif isinstance(self.template_filename,tuple):
+            attr_str = self.template_filename[0]
+            template_dict = self.template_filename[1]
+            template_filename = template_dict[getattr(self,attr_str)]
+
+        _add_image(ax,template_filename)
+
 
     def render(self):
 
@@ -82,7 +98,7 @@ class Card(object):
             fig,ax = plt.subplots(1,1,figsize = self.dimensions)
             plt.axis('off')
 
-            _add_image(ax,self.template_filename)
+            self._add_template(ax)
 
             # ITERATE THROUGH IMAGES 
             for image in self.images:
@@ -130,12 +146,14 @@ class Card(object):
                             )
 
             # make some filenames using self 
-            ps_file = './pdf/{}.eps'.format(self.name)
-            pdf_file = './pdf/{}.pdf'.format(self.name)
+            ps_file = './pdf/{}/{}.eps'.format(self.label,self.name)
+            pdf_file = './pdf/{}/{}.pdf'.format(self.label,self.name)
 
             # make directory if it doesn't exist
             if not os.path.isdir('pdf'):
                 os.mkdir('pdf')
+            if not os.path.isdir('pdf/{}'.format(self.label)):
+                os.mkdir('pdf/{}'.format(self.label))
 
             plt.savefig(ps_file,dpi=__dpi__,bbox_inches='tight',pad_inches=0)
             plt.close(fig)
@@ -318,15 +336,19 @@ def format_text_colors(label):
     return label
 
 
-def _add_annotation(ax,text = '',loc = (.5,.5),fs = 24,ha='center',va='center',**kwargs):
-    
-    ax.annotate(format_text_colors(text),loc,va=va,ha=va,
-            color='black',fontsize=fs)
+def _add_annotation(ax,text = '',loc = (.5,.5),fs = 24,ha='center',va='center',interpreter=True,**kwargs):
+    if interpreter == True: 
+        ax.annotate(format_text_colors(text),loc,va=va,ha=va,
+                color='black',fontsize=fs)
+    else:
+        ax.annotate(text,loc,va=va,ha=va,
+                color='black',fontsize=fs)
 
 
 def _add_image(ax,fname = None,loc = (.5,.5),**kwargs):
 
     fname = fname.replace(' ','_')
+    fname = fname.replace("'",'_')
 
     if not os.path.isfile(fname):
         print '{} not found!'.format(fname)
