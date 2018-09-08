@@ -56,6 +56,7 @@ class Card(object):
     label = "card"
 
     annotations = []
+    annotations_xy = []
     attack_annotations = False
 
     #template_filename = './img/Monster-Card-Template.png'
@@ -91,6 +92,18 @@ class Card(object):
 
         _add_image(ax,template_filename)
 
+    @property
+    def attacks(self):
+        attack = []
+        for n in xrange(1,7):
+            val = getattr(self,'roll_{}'.format(n))
+            moves = [a[1] for a in attack]
+            if val in moves:
+                ind = moves.index(val)
+                attack[ind][0].append(n)
+            else:
+                attack.append([[n],val])
+        return attack
 
     def render(self):
 
@@ -109,6 +122,20 @@ class Card(object):
 
             # ITERATE THROUGH ANNOTATIONS
             for annotation in self.annotations:
+                if isinstance(annotation,dict):
+                    my_annotation = annotation
+                elif isinstance(annotation,tuple):
+                    attr_str = annotation[0]
+                    annotation_dict = annotation[1]
+                    annotation = annotation_dict[getattr(self,attr_str)]
+
+                if 'text' in annotation:
+                    _add_annotation(ax,**annotation)
+                elif 'text_fn' in annotation:
+                    _add_annotation(ax,text = getattr(self,annotation['text_fn'])(),**annotation)
+
+
+            for annotation in self.annotations_xy:
                 if 'text' in annotation:
                     _add_annotation(ax,**annotation)
                 elif 'text_fn' in annotation:
@@ -141,7 +168,7 @@ class Card(object):
                     # Add attack text
                     _add_annotation(ax,
                             fs = 14,
-                            text = _parse_attack_text(attack),
+                            text = format_text_linebreaks(attack,limit=22),
                             loc = (0.60,roll_ypos[rollset_count][rollset_ind])
                             )
 
