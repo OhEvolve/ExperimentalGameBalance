@@ -15,6 +15,7 @@ from cards import generic_db
 from cards import starter_db
 from cards import mesmer_db
 from cards import ironclad_db
+from cards import trapper_db
 from cards import relic_db
 from cards import treasure_db
 from cards import event_db
@@ -22,14 +23,15 @@ from cards import event_db
 db = {}
 
 
-db['monster'] = monster_db.make(render=True,printable=True)
+#db['monster'] = monster_db.make(render=True,printable=True)
 #db['event'] = event_db.make(render=True,printable=True)
 #db['treasure'] = treasure_db.make(render=True,printable=True)
 #db['relics'] = relic_db.make(render=True,printable=True)
 #db['generics'] = generic_db.make(render=True,printable=True)
 #db['starter'] = starter_db.make(render=True,printable=True)
-#db['monsters'] = monster_db.make()
+db['monsters'] = monster_db.make(render=True,printable=True)
 #db['ironclad'] = ironclad_db.make(render=True,printable=True)
+#db['trapper'] = trapper_db.make(render=True,printable=True)
 #db['mesmer'] = mesmer_db.make(render=True,printable=True)
 
 

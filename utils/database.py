@@ -35,6 +35,7 @@ class CardDatabase(object):
             raise TypeError('Submitted card not correct type!')
         # check for unique name
         if name in self._name2database:
+            print name
             raise KeyError('Submitted card name already in use!')
 
         self._name2database[name] = new_item
