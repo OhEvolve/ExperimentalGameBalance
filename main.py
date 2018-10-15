@@ -1,4 +1,3 @@
-
 from cards.card import Card
 from utils.deck import CardPile
 
@@ -27,9 +26,9 @@ db = {}
 #db['event'] = event_db.make(render=True,printable=True)
 #db['treasure'] = treasure_db.make(render=True,printable=True)
 #db['relics'] = relic_db.make(render=True,printable=True)
-#db['generics'] = generic_db.make(render=True,printable=True)
+db['generics'] = generic_db.make(render=True,printable=True)
 #db['starter'] = starter_db.make(render=True,printable=True)
-db['monsters'] = monster_db.make(render=True,printable=True)
+#db['monsters'] = monster_db.make(render=True,printable=True)
 #db['ironclad'] = ironclad_db.make(render=True,printable=True)
 #db['trapper'] = trapper_db.make(render=True,printable=True)
 #db['mesmer'] = mesmer_db.make(render=True,printable=True)
